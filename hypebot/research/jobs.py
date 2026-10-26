@@ -7,6 +7,7 @@ from datetime import datetime, timedelta, timezone
 from sqlalchemy import select
 from ..db import Database, Project, Snapshot, XRequest, utcnow
 from ..scoring import ALGORITHM_VERSION
+from ..config import configured_tiers, tier_numbers
 from .models import ResearchJob, Evidence, ResearchResult, ManualReview, ResearchAttempt, JOB_STEPS
 from . import attempts as att
 from .evidence import validate_research_payload, ResearchPayloadError
@@ -330,7 +331,7 @@ def finalize(db: Database, job_id: int, force: bool = False, rescore: bool = Fal
         rep = evaluate_research(snap=hype_now, evidence=evs, category=cat, handle=proj.x_display_handle,
                                 previous=(prev.report if prev else None), peers=peers,
                                 unavailable=job.unavailable_sources, hints=job.hints, attempts=att.summary(s, job.id),
-                                social=social)
+                                social=social, tiers=configured_tiers())
         _set(job, "score", "done", f"profile {rep['profile']}, checklist coverage {rep['coverage']:.0%}")
         prev_for_job = s.scalar(select(ResearchResult).where(ResearchResult.job_id == job.id)
                                 .order_by(ResearchResult.id.desc()).limit(1))
@@ -452,11 +453,13 @@ async def advance_all(db: Database, http_client=None) -> list[int]:
     return changed
 
 
-def add_review(db: Database, project_id: int, reviewer_id: str, action: str, tier: int | None, notes: str | None) -> int:
+def add_review(db: Database, project_id: int, reviewer_id: str, action: str, tier: int | None, notes: str | None,
+               tiers=None) -> int:
     if action not in ("confirm", "change_tier", "reject", "note"):
         raise ValueError("action must be confirm|change_tier|reject|note")
-    if action == "change_tier" and tier not in (1, 2, 3, 4):
-        raise ValueError("change_tier needs tier 1-4")
+    nums = tier_numbers(tiers or configured_tiers())
+    if action == "change_tier" and tier not in nums:
+        raise ValueError(f"change_tier needs tier {nums[0]}-{nums[-1]}")
     with db.Session.begin() as s:
         res = s.scalar(select(ResearchResult).where(ResearchResult.project_id == project_id)
                        .order_by(ResearchResult.created_at.desc(), ResearchResult.id.desc()).limit(1))

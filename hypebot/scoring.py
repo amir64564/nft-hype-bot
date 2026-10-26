@@ -213,7 +213,7 @@ def tier_for(score: float, tiers=DEFAULT_TIERS) -> int:
     for lo, t in sorted(tiers, reverse=True):
         if score >= lo:
             return t
-    return tiers[-1][1]
+    return max(t for _, t in tiers)   # lowest tier (robust to unsorted input)
 
 
 # --------------------------- confidence ---------------------------

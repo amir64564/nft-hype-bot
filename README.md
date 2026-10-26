@@ -1,7 +1,7 @@
 # NFT / Web3 Hype Bot (Discord)
 
 Analyzes NFT/Web3 projects from X (Twitter) and public sources, computes a **Hype Score /100**, assigns
-**Tier 1–4**, stores append-only snapshots, and tracks trend over time.
+**Tier 1–N** (default 4 tiers; set with `TIERS`), stores append-only snapshots, and tracks trend over time.
 
 ## Commands
 | Command | What it does |

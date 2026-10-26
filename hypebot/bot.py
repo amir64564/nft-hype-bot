@@ -227,7 +227,7 @@ class Handlers:
         if not p:
             await interaction.response.send_message(f"Unknown project `{project}`.", ephemeral=True); return
         try:
-            rid = rjobs.add_review(self.db, p.id, str(interaction.user.id), action, tier, notes)
+            rid = rjobs.add_review(self.db, p.id, str(interaction.user.id), action, tier, notes, tiers=self.s.tiers)
         except ValueError as e:
             await interaction.response.send_message(f"❌ {e}", ephemeral=True); return
         st = rjobs.calibration_stats(self.db)
@@ -430,7 +430,7 @@ def build_tree(tree: app_commands.CommandTree, h: Handlers):
     @tree.command(name="review", description="(Reviewers) confirm, change tier, reject or annotate the latest result")
     @app_commands.choices(action=[app_commands.Choice(name=n, value=n) for n in ("confirm", "change_tier", "reject", "note")])
     async def review(i: discord.Interaction, project: str, action: app_commands.Choice[str],
-                     tier: app_commands.Range[int, 1, 4] | None = None, notes: str | None = None):
+                     tier: app_commands.Range[int, 1, 9] | None = None, notes: str | None = None):
         await h.review(i, project, action.value, tier, notes)
 
     @tree.command(name="refresh", description="Collect fresh data and recalculate a saved project's score")

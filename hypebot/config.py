@@ -38,6 +38,16 @@ def parse_tiers(spec: str | None) -> list:
     return [(b, i + 1) for i, b in enumerate(bounds)] + [(0, len(bounds) + 1)]
 
 
+def configured_tiers() -> list:
+    """The ONE tier configuration (TIERS env, default 80,60,40 -> 4 tiers). Used by hype scoring,
+    research finalization and manual review validation so the tier count is consistent everywhere."""
+    return parse_tiers(os.getenv("TIERS"))
+
+
+def tier_numbers(tiers) -> list:
+    return sorted(t for _, t in tiers)
+
+
 def tier_ranges_text(tiers) -> str:
     t = sorted(tiers, reverse=True)
     out, hi = [], 100

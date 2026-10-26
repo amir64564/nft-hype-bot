@@ -57,7 +57,8 @@ Labels (hard gates first):
 ## Ranking
 * Low confidence or no official engagement → **Unranked** (indicative score, `tier = NULL`).
 * Medium → tier assigned, marked provisional. High with full coverage → tier, not provisional.
-* Tiers: T1 80–100, T2 60–79, T3 40–59, T4 0–39.
+* Tiers (default, `TIERS=80,60,40`): T1 80–100, T2 60–79, T3 40–59, T4 0–39. The same
+  configuration (`config.configured_tiers()`) is used by hype scoring, research finalization and `/review` validation.
 
 ## Versions & history
 * `snapshots.algorithm_version`: pre-v2 rows are `v1-legacy` (column default from the additive
