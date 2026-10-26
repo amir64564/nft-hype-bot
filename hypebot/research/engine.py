@@ -103,19 +103,48 @@ def f_market(evs, stage):
     return clamp(sum(parts) / len(parts) + 0.1 * ms), "holders/supply, 7d sales, wash-trade check (floor price alone is not quality)"
 
 
-def dedupe_evidence(evs: list) -> tuple[list, int]:
-    """Drop exact duplicate claims (same signal, value, source URL, account and claim text) so a repeated
-    feeder submission cannot add points twice (audit 2026-10-26: 3 copies of one team claim raised the
-    team factor 0.65 -> 1.0). Items without a signal are kept as-is (they never score)."""
-    seen, out, dropped = set(), [], 0
+NEAR_DUP_JACCARD = 0.8
+
+
+def _claim_tokens(t) -> frozenset:
+    return frozenset(w for w in "".join(ch if ch.isalnum() else " " for ch in str(t or "").lower()).split() if len(w) > 2)
+
+
+def dedupe_evidence(evs: list, audit: dict | None = None) -> tuple[list, int]:
+    """Drop duplicate claims so a repeated feeder submission cannot add points twice (audit 2026-10-26:
+    3 copies of one team claim raised the team factor 0.65 -> 1.0).
+    exact: same signal, value, source URL, account and claim text.
+    near (r2.4): same signal + value + SAME normalized source URL (or, without URL, same account) and
+    claim-token Jaccard >= NEAR_DUP_JACCARD — a reworded copy of one source. Evidence from a different
+    source URL is never merged (independent corroboration is kept). Items without a signal are kept.
+    `audit` (optional dict) receives {"exact": n, "near": n, "removed": [{id, reason, kept_id}]}."""
+    seen, kept, out, dropped = set(), [], [], 0
+    if audit is not None:
+        audit.update(exact=0, near=0, removed=[])
     for e in evs:
         if e.get("signal"):
-            key = (e.get("signal"), e.get("value"), (e.get("source_url") or "").strip().rstrip("/").lower(),
-                   (e.get("account") or "").lower(), " ".join(str(e.get("claim") or "").lower().split()))
+            url = (e.get("source_url") or "").strip().rstrip("/").lower()
+            acct = (e.get("account") or "").lower()
+            key = (e.get("signal"), e.get("value"), url, acct, " ".join(str(e.get("claim") or "").lower().split()))
+            reason, twin = None, None
             if key in seen:
+                reason = "exact duplicate"
+            else:
+                toks = _claim_tokens(e.get("claim"))
+                for k2, t2, e2 in kept:
+                    same_src = (url and url == k2[2]) or (not url and not k2[2] and acct and acct == k2[3])
+                    if k2[0] == key[0] and k2[1] == key[1] and same_src and toks and t2:
+                        if len(toks & t2) / len(toks | t2) >= NEAR_DUP_JACCARD:
+                            reason, twin = "near duplicate (reworded claim, same source)", e2
+                            break
+            if reason:
                 dropped += 1
+                if audit is not None:
+                    audit["exact" if reason == "exact duplicate" else "near"] += 1
+                    audit["removed"].append({"id": e.get("id"), "reason": reason, "kept_id": (twin or {}).get("id")})
                 continue
             seen.add(key)
+            kept.append((key, _claim_tokens(e.get("claim")), e))
         out.append(e)
     return out, dropped
 
@@ -127,7 +156,9 @@ def f_identity(evs, handle):
     links = [e for e in _sig(evs, "official_link") if (e.get("value") or 0) >= 1]
     pairs = {tuple(sorted([(e.get("data") or {}).get("from_kind", "?"), (e.get("data") or {}).get("to_kind", "?")])) for e in links}
     if not links:
-        return 0.0, "no verified cross-links between official X, website and marketplace"
+        # unverified is UNKNOWN (factor excluded), not 0 points; only a sourced mismatch scores 0 (r2.4).
+        # Unverified identity still FAILS the mandatory identity check, so it can never finalize a tier.
+        return None, "identity unverified: no verified cross-links between official X, website and marketplace"
     return clamp(len(pairs) / 2), f"{len(links)} verified cross-links ({', '.join('↔'.join(p) for p in sorted(pairs))})"
 
 
@@ -166,7 +197,8 @@ def evaluate_research(*, snap: dict | None, evidence: list, category: dict, hand
                       previous: dict | None = None, peers: list | None = None, unavailable: list | None = None,
                       hints: dict | None = None, attempts: list | None = None, tiers=DEFAULT_TIERS,
                       social: dict | None = None) -> dict:
-    evs, dropped = dedupe_evidence([_ev(e) for e in evidence])
+    dedupe_audit: dict = {}
+    evs, dropped = dedupe_evidence([_ev(e) for e in evidence], dedupe_audit)
     hints = hints or {}
     attempts = attempts or []
     peers = peers or []
@@ -197,11 +229,21 @@ def evaluate_research(*, snap: dict | None, evidence: list, category: dict, hand
     bench = benchmark(snap, peers)
     cl = build_checklist(snap=snap, evidence=evs, hints=hints, attempts=attempts, category=prim, stage=stage,
                          peers_n=len(peers), conflicts=conflicts, handle=handle, social=social)
-    if social and social.get("has_sorsa_pack") and cl["identity"]["status"] == "FAILED" \
+    # only a genuine MISMATCH is a contradiction; merely unverified identity is reported as unverified (r2.4 fix:
+    # previously any FAILED identity, incl. "0 cross-links found", was injected as an identity conflict)
+    _ids = (cl["identity"].get("counts") or {}).get("identity_state")
+    if social and social.get("has_sorsa_pack") and _ids == "unverified" \
+            and not any("identity not independently verified" in u for u in social.get("unverified") or []):
+        from .checklist import social_checks
+        social = dict(social, unverified=list(social.get("unverified") or []) + [
+            "project identity not independently verified — Sorsa data may describe the wrong account"])
+        for k, v in social_checks(social).items():
+            cl[k] = dict(v, label=CHECKS[k], mandatory=False)
+    if social and social.get("has_sorsa_pack") and _ids == "mismatch" \
             and not any(c.get("type") == "identity" for c in social.get("conflicts") or []):
         from .checklist import social_checks
         social = dict(social, conflicts=list(social.get("conflicts") or []) + [
-            {"type": "identity", "detail": "Sorsa returned data for this handle, but the independent identity check FAILED"}],
+            {"type": "identity", "detail": "Sorsa returned data for this handle, but sourced links show an identity MISMATCH"}],
             unverified=list(social.get("unverified") or []) + [
             "project identity not independently verified — Sorsa data may describe the wrong account"])
         for k, v in social_checks(social).items():
@@ -311,7 +353,7 @@ def evaluate_research(*, snap: dict | None, evidence: list, category: dict, hand
         change["to"] = verdict_text
     show_precise = status == "FINALIZED"
     return {"version": RESEARCH_VERSION, "hype_version": ALGORITHM_VERSION, "algorithm": f"{ALGORITHM_VERSION}+{RESEARCH_VERSION}",
-            "status": status, "identity_state": id_state, "duplicate_evidence_dropped": dropped, "verdict": verdict, "verdict_text": verdict_text, "tier": tier, "raw_tier": raw_tier,
+            "status": status, "identity_state": id_state, "duplicate_evidence_dropped": dropped, "duplicate_evidence_audit": dedupe_audit, "verdict": verdict, "verdict_text": verdict_text, "tier": tier, "raw_tier": raw_tier,
             "suggested_tier": est, "hysteresis": hyst, "overall_score": overall if show_precise else None,
             "overall_score_internal": overall, "hype_score": (snap or {}).get("hype_score"),
             "hype_tier": (snap or {}).get("tier"), "hype_snapshot_id": (snap or {}).get("id"),
