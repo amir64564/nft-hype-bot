@@ -1,0 +1,165 @@
+{
+ "_doc": "Tier benchmark. ground_truth_source: manual_review = a human reviewed the project and evidence independently of the bot; algorithm_echo = expected value copied from current bot output (regression only, proves nothing about accuracy); unknown = no expectation. As of 2026-10-26 there are ZERO manual_review cases (manual_reviews table in hypebot.db is empty). To add ground truth: fill manual_review.manual_tier + reviewer + reviewed_at + evidence_urls (real public links you opened) + notes, and set ground_truth_source to manual_review. scripts/benchmark_tiers.py reports manual and echo agreement separately; accuracy may only be claimed from manual_review rows.",
+ "cases": [
+  {
+   "name": "Minehood",
+   "handle": "minehood_rh",
+   "input_file": "tests/fixtures/x_ingest/req1.json",
+   "ground_truth_source": "algorithm_echo",
+   "expected_tier": 2,
+   "expected_ranked": true,
+   "basis": "output of hype algorithm v2.x on this fixed input (tests/regression_expectations.json) \u2014 NOT an independent judgement",
+   "manual_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "manual_tier": null,
+    "evidence_urls": [],
+    "notes": null
+   }
+  },
+  {
+   "name": "Brixes",
+   "handle": "brixes_xyz",
+   "input_file": "tests/fixtures/x_ingest/req2.json",
+   "ground_truth_source": "algorithm_echo",
+   "expected_tier": null,
+   "expected_ranked": false,
+   "basis": "output of hype algorithm v2.x on this fixed input (tests/regression_expectations.json) \u2014 NOT an independent judgement",
+   "manual_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "manual_tier": null,
+    "evidence_urls": [],
+    "notes": null
+   }
+  },
+  {
+   "name": "Brixes",
+   "handle": "brixes_xyz",
+   "input_file": "tests/fixtures/x_ingest/req2_full.json",
+   "ground_truth_source": "algorithm_echo",
+   "expected_tier": 3,
+   "expected_ranked": true,
+   "basis": "output of hype algorithm v2.x on this fixed input (tests/regression_expectations.json) \u2014 NOT an independent judgement",
+   "manual_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "manual_tier": null,
+    "evidence_urls": [],
+    "notes": null
+   }
+  },
+  {
+   "name": "LilDudes",
+   "handle": "lildudes_",
+   "input_file": "tests/fixtures/x_ingest/req6.json",
+   "ground_truth_source": "algorithm_echo",
+   "expected_tier": 2,
+   "expected_ranked": true,
+   "basis": "output of hype algorithm v2.x on this fixed input (tests/regression_expectations.json) \u2014 NOT an independent judgement",
+   "manual_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "manual_tier": null,
+    "evidence_urls": [],
+    "notes": null
+   }
+  },
+  {
+   "name": "GigaLegendsLTD",
+   "handle": "GigaLegendsLTD",
+   "input_file": "tests/fixtures/x_ingest/req7.json",
+   "ground_truth_source": "algorithm_echo",
+   "expected_tier": null,
+   "expected_ranked": false,
+   "basis": "output of hype algorithm v2.x on this fixed input (tests/regression_expectations.json) \u2014 NOT an independent judgement",
+   "manual_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "manual_tier": null,
+    "evidence_urls": [],
+    "notes": null
+   }
+  },
+  {
+   "name": "Nuloraio",
+   "handle": "nuloraio",
+   "input_file": "tests/fixtures/x_ingest/req8.json",
+   "ground_truth_source": "algorithm_echo",
+   "expected_tier": 3,
+   "expected_ranked": true,
+   "basis": "output of hype algorithm v2.x on this fixed input (tests/regression_expectations.json) \u2014 NOT an independent judgement",
+   "manual_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "manual_tier": null,
+    "evidence_urls": [],
+    "notes": null
+   }
+  },
+  {
+   "name": "Inkvire",
+   "handle": "inkvire",
+   "input_file": "tests/fixtures/x_ingest/inkvire.json",
+   "ground_truth_source": "algorithm_echo",
+   "expected_tier": null,
+   "expected_ranked": false,
+   "basis": "output of hype algorithm v2.x on this fixed input (tests/regression_expectations.json) \u2014 NOT an independent judgement",
+   "manual_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "manual_tier": null,
+    "evidence_urls": [],
+    "notes": null
+   }
+  },
+  {
+   "name": "Freedznft",
+   "handle": "freedznft",
+   "input_file": "tests/fixtures/x_ingest/req11.json",
+   "ground_truth_source": "algorithm_echo",
+   "expected_tier": 3,
+   "expected_ranked": true,
+   "basis": "output of hype algorithm v2.x on this fixed input (tests/regression_expectations.json) \u2014 NOT an independent judgement",
+   "manual_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "manual_tier": null,
+    "evidence_urls": [],
+    "notes": null
+   }
+  },
+  {
+   "name": "Therebelkins",
+   "handle": "therebelkins",
+   "input_file": "tests/fixtures/x_ingest/req12.json",
+   "ground_truth_source": "algorithm_echo",
+   "expected_tier": 3,
+   "expected_ranked": true,
+   "basis": "output of hype algorithm v2.x on this fixed input (tests/regression_expectations.json) \u2014 NOT an independent judgement",
+   "manual_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "manual_tier": null,
+    "evidence_urls": [],
+    "notes": null
+   }
+  },
+  {
+   "name": "LootPlanetsRH",
+   "handle": "LootPlanetsRH",
+   "input_file": "tests/fixtures/x_ingest/req13.json",
+   "ground_truth_source": "algorithm_echo",
+   "expected_tier": 4,
+   "expected_ranked": true,
+   "basis": "output of hype algorithm v2.x on this fixed input (tests/regression_expectations.json) \u2014 NOT an independent judgement",
+   "manual_review": {
+    "reviewer": null,
+    "reviewed_at": null,
+    "manual_tier": null,
+    "evidence_urls": [],
+    "notes": null
+   }
+  }
+ ]
+}
