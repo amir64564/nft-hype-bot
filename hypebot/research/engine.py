@@ -103,7 +103,27 @@ def f_market(evs, stage):
     return clamp(sum(parts) / len(parts) + 0.1 * ms), "holders/supply, 7d sales, wash-trade check (floor price alone is not quality)"
 
 
+def dedupe_evidence(evs: list) -> tuple[list, int]:
+    """Drop exact duplicate claims (same signal, value, source URL, account and claim text) so a repeated
+    feeder submission cannot add points twice (audit 2026-10-26: 3 copies of one team claim raised the
+    team factor 0.65 -> 1.0). Items without a signal are kept as-is (they never score)."""
+    seen, out, dropped = set(), [], 0
+    for e in evs:
+        if e.get("signal"):
+            key = (e.get("signal"), e.get("value"), (e.get("source_url") or "").strip().rstrip("/").lower(),
+                   (e.get("account") or "").lower(), " ".join(str(e.get("claim") or "").lower().split()))
+            if key in seen:
+                dropped += 1
+                continue
+            seen.add(key)
+        out.append(e)
+    return out, dropped
+
+
 def f_identity(evs, handle):
+    bad = [e for e in _sig(evs, "official_link") if (e.get("value") or 0) < 1]
+    if bad:   # sourced proof of a different account: identity factor cannot earn points
+        return 0.0, f"identity mismatch: {len(bad)} sourced link(s) point to a different/unlinked account"
     links = [e for e in _sig(evs, "official_link") if (e.get("value") or 0) >= 1]
     pairs = {tuple(sorted([(e.get("data") or {}).get("from_kind", "?"), (e.get("data") or {}).get("to_kind", "?")])) for e in links}
     if not links:
@@ -146,7 +166,7 @@ def evaluate_research(*, snap: dict | None, evidence: list, category: dict, hand
                       previous: dict | None = None, peers: list | None = None, unavailable: list | None = None,
                       hints: dict | None = None, attempts: list | None = None, tiers=DEFAULT_TIERS,
                       social: dict | None = None) -> dict:
-    evs = [_ev(e) for e in evidence]
+    evs, dropped = dedupe_evidence([_ev(e) for e in evidence])
     hints = hints or {}
     attempts = attempts or []
     peers = peers or []
@@ -212,7 +232,10 @@ def evaluate_research(*, snap: dict | None, evidence: list, category: dict, hand
         reasons.append(f"insufficient benchmark data ({bench['n']} peer(s))")
     # ---- verdict / state ----
     manual = []
-    if cl["identity"]["status"] == "FAILED":
+    id_state = (cl["identity"].get("counts") or {}).get("identity_state")
+    if id_state == "mismatch":
+        manual.append("identity mismatch (manual verification required): " + cl["identity"]["reason"])
+    elif cl["identity"]["status"] == "FAILED":
         manual.append("identity not verified: " + cl["identity"]["reason"])
     sim = [e for e in evs if (e.get("data") or {}).get("similar")]
     if sim:
@@ -234,8 +257,8 @@ def evaluate_research(*, snap: dict | None, evidence: list, category: dict, hand
     tier = est if status == "FINALIZED" else None
     raw_tier, hyst = tier, None
     if tier and previous and previous.get("tier") and previous["tier"] != tier and previous.get("version") == RESEARCH_VERSION:
-        lo_new = {t: lo for lo, t in tiers}[min(tier, previous["tier"])]
-        if abs(overall - lo_new) < HYSTERESIS and abs(tier - previous["tier"]) == 1:
+        lo_new = {t: lo for lo, t in tiers}.get(min(tier, previous["tier"]))
+        if lo_new is not None and abs(overall - lo_new) < HYSTERESIS and abs(tier - previous["tier"]) == 1:
             hyst = f"kept Tier {previous['tier']}: score {overall} is within {HYSTERESIS} of the {lo_new:g} boundary"
             tier = previous["tier"]
     # ---- change explanation ----
@@ -288,7 +311,7 @@ def evaluate_research(*, snap: dict | None, evidence: list, category: dict, hand
         change["to"] = verdict_text
     show_precise = status == "FINALIZED"
     return {"version": RESEARCH_VERSION, "hype_version": ALGORITHM_VERSION, "algorithm": f"{ALGORITHM_VERSION}+{RESEARCH_VERSION}",
-            "status": status, "verdict": verdict, "verdict_text": verdict_text, "tier": tier, "raw_tier": raw_tier,
+            "status": status, "identity_state": id_state, "duplicate_evidence_dropped": dropped, "verdict": verdict, "verdict_text": verdict_text, "tier": tier, "raw_tier": raw_tier,
             "suggested_tier": est, "hysteresis": hyst, "overall_score": overall if show_precise else None,
             "overall_score_internal": overall, "hype_score": (snap or {}).get("hype_score"),
             "hype_tier": (snap or {}).get("tier"), "hype_snapshot_id": (snap or {}).get("id"),

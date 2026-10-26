@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 
 VERIFIED, PARTIAL, FAILED, NA = "VERIFIED", "PARTIAL", "FAILED", "NOT_APPLICABLE"
 MIN_VIEWED_IMAGES = 3
+IDENTITY_VERIFIED, IDENTITY_UNVERIFIED, IDENTITY_MISMATCH = "verified", "unverified", "mismatch"
 MIN_PEERS = 3
 
 CHECKS = {
@@ -61,15 +62,22 @@ def build_checklist(*, snap, evidence, hints, attempts, category, stage, peers_n
     bad = [e for e in links if (e.get("value") or 0) < 1]
     pairs = {tuple(sorted([(e.get("data") or {}).get("from_kind", "?"), (e.get("data") or {}).get("to_kind", "?")])) for e in good}
     src = [e["source_url"] for e in links if e.get("source_url")]
+    # identity_state keeps the three cases apart: verified / unverified (no or too little proof) / mismatch
+    # (sourced proof of a DIFFERENT account). Both unverified and mismatch block finalization; mismatch is
+    # reported as a contradiction, never as "not yet verified".
     if bad:
-        out["identity"] = _c(FAILED, f"{len(bad)} sourced link(s) point to a different/unlinked account", [e["claim"] for e in bad], src)
+        out["identity"] = _c(FAILED, f"identity MISMATCH: {len(bad)} sourced link(s) point to a different/unlinked account",
+                             [e["claim"] for e in bad], src, {"identity_state": IDENTITY_MISMATCH, "mismatch_links": len(bad),
+                                                              "verified_links": len(good)})
     elif len(pairs) >= 2:
-        out["identity"] = _c(VERIFIED, f"{len(pairs)} independent verified cross-links", [e["claim"] for e in good], src)
+        out["identity"] = _c(VERIFIED, f"{len(pairs)} independent verified cross-links", [e["claim"] for e in good], src,
+                             {"identity_state": IDENTITY_VERIFIED, "verified_links": len(good)})
     elif good:
-        out["identity"] = _c(PARTIAL, "only one verified cross-link (need ≥2 independent, e.g. X↔website and marketplace→X)",
-                             [e["claim"] for e in good], src)
+        out["identity"] = _c(PARTIAL, "identity unverified: only one verified cross-link (need ≥2 independent, e.g. X↔website and marketplace→X)",
+                             [e["claim"] for e in good], src, {"identity_state": IDENTITY_UNVERIFIED, "verified_links": len(good)})
     else:
-        out["identity"] = _c(FAILED, "no verified cross-link between official X, website, marketplace")
+        out["identity"] = _c(FAILED, "identity unverified: no verified cross-link between official X, website, marketplace",
+                             counts={"identity_state": IDENTITY_UNVERIFIED, "verified_links": 0})
     # official X
     n = m.get("sample_tweets")
     counts = {"official_posts_examined": n or 0, "posts_supplied": m.get("posts_supplied"),

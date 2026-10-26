@@ -1,0 +1,25 @@
+{
+  "_doc": "Projects that previously received a tier from the legacy v1 algorithm which the documented v2 evidence rules (docs/SCORING.md) reject. legacy_* values are copied from REAL v1-legacy snapshots in the production hypebot.db (snapshot ids given; exported 2026-10-26). input_file is the real X dataset in tests/fixtures/x_ingest/ for the same project. expected_* is the CURRENT documented v2 outcome (same as tests/regression_expectations.json). These are NOT user-confirmed ground-truth tiers: no manual review exists in the DB (manual_reviews is empty). The v1 snapshot is not guaranteed to be byte-identical input to input_file; the reason column cites the metric that the v1 snapshot itself recorded.",
+  "cases": [
+    {"name": "Brixes", "handle": "brixes_xyz", "input_file": "req2", "legacy_snapshot_id": 5, "legacy_tier": 2, "legacy_confidence": "High",
+     "legacy_metrics": {"sample_tweets": 2, "top_post_share": 0.598},
+     "expected_ranked": false, "expected_tier": null, "expected_confidence": "Low",
+     "reason": "v1 gave Tier 2 / High confidence from 2 official posts; v2 caps confidence Low below 3 posts, so no tier can be assigned"},
+    {"name": "GigaLegendsLTD", "handle": "GigaLegendsLTD", "input_file": "req7", "legacy_snapshot_id": 9, "legacy_tier": 2, "legacy_confidence": "High",
+     "legacy_metrics": {"sample_tweets": 1, "top_post_share": 1.0},
+     "expected_ranked": false, "expected_tier": null, "expected_confidence": "Low",
+     "reason": "v1 gave Tier 2 / High from ONE viral post (100% of engagement); a single viral post cannot rank"},
+    {"name": "Minehood", "handle": "minehood_rh", "input_file": "req1", "legacy_snapshot_id": [2, 4, 6], "legacy_tier": [3, 1, 1], "legacy_confidence": "High",
+     "legacy_metrics": {"sample_tweets": 13, "top_post_share": 0.347},
+     "expected_ranked": true, "expected_tier": 2, "expected_confidence": "High",
+     "reason": "v1 gave Tier 3 then Tier 1 for identical recorded metrics (inconsistent); v2 is deterministic: Tier 2 (49% wallet-address replies keep community below max)"},
+    {"name": "Nuloraio", "handle": "nuloraio", "input_file": "req8", "legacy_snapshot_id": 10, "legacy_tier": 3, "legacy_confidence": "High",
+     "legacy_metrics": {"sample_tweets": 8, "top_post_share": 0.866},
+     "expected_ranked": true, "expected_tier": 3, "expected_confidence": "Medium",
+     "reason": "tier unchanged, but v1 claimed High confidence while 87% of engagement sat in one post; v2 caps at Medium"},
+    {"name": "LilDudes", "handle": "lildudes_", "input_file": "req6", "legacy_snapshot_id": 8, "legacy_tier": 2, "legacy_confidence": "High",
+     "legacy_metrics": {"sample_tweets": 12, "top_post_share": 0.562},
+     "expected_ranked": true, "expected_tier": 2, "expected_confidence": "Medium",
+     "reason": "tier unchanged, but one post carries 56% of engagement, so v2 confidence is capped at Medium (v1 said High)"}
+  ]
+}

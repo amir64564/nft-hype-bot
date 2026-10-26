@@ -5,6 +5,22 @@ import discord
 COL = {1: 0x2ECC71, 2: 0xF1C40F, 3: 0xE67E22, 4: 0xE74C3C}
 
 
+
+IDENTITY_TEXT = {"verified": "✅ identity verified", "unverified": "⚠️ identity unverified", "mismatch": "❌ identity MISMATCH"}
+
+
+def why_tier_text(r: dict) -> str:
+    """Why this tier: not higher / not lower, plus quality cap, hysteresis and identity state when relevant."""
+    w = r.get("why_tier") or {}
+    out = [f"Not higher: {w.get('not_higher')}", f"Not lower: {w.get('not_lower')}"]
+    if w.get("quality_cap"):
+        out.append(f"Cap: {w['quality_cap']}")
+    if r.get("hysteresis"):
+        out.append(f"Hysteresis: {r['hysteresis']}")
+    if r.get("identity_state"):
+        out.append(IDENTITY_TEXT.get(r["identity_state"], r["identity_state"]))
+    return "\n".join(out)
+
 def _lines(items, n=6, w=1000):
     out = []
     for c in items[:n]:
@@ -141,7 +157,7 @@ def report_embed(project, result, reviews=None, verify=False) -> discord.Embed:
         e.add_field(name="⚔️ Conflicting evidence", value="\n".join(
             f"• {c['signal']}: " + " vs ".join(f"[{x['claim'][:50]}]({x['url']})" for x in c["claims"][:2]) for c in r["conflicts"])[:1024], inline=False)
     if r.get("why_tier"):
-        e.add_field(name="Why this tier", value=f"Not higher: {r['why_tier']['not_higher']}\nNot lower: {r['why_tier']['not_lower']}"[:1024], inline=False)
+        e.add_field(name="Why this tier", value=why_tier_text(r)[:1024], inline=False)
     ch = r.get("change") or {}
     if ch.get("from") is not None or ch.get("cause"):
         e.add_field(name=f"Change: {ch.get('from')} → {ch.get('to')}",
@@ -192,9 +208,10 @@ def _legacy_report_embed(project, result, reviews=None, verify=False) -> discord
             f"• {c['signal']}: " + " vs ".join(f"[{x['claim'][:50]}]({x['url']})" for x in c["claims"][:2]) for c in r["conflicts"])[:1024], inline=False)
     e.add_field(name="Missing info", value="\n".join(f"• {m}" for m in r.get("missing_info", [])[:8])[:1024] or "—", inline=False)
     if r.get("why_tier"):
-        e.add_field(name="Why this tier", value=f"Not higher: {r['why_tier']['not_higher']}\nNot lower: {r['why_tier']['not_lower']}"[:1024], inline=False)
-    if r.get("change") and r["change"].get("drivers"):
-        e.add_field(name=f"Change: {r['change']['from']} → {r['change']['to']}", value="\n".join(r["change"]["drivers"])[:1024], inline=False)
+        e.add_field(name="Why this tier", value=why_tier_text(r)[:1024], inline=False)
+    if r.get("change") and (r["change"].get("drivers") or r["change"].get("from") != r["change"].get("to")):
+        e.add_field(name=f"Change: {r['change']['from']} → {r['change']['to']}",
+                    value="\n".join([r["change"].get("cause") or ""] + list(r["change"].get("drivers") or []))[:1024] or "—", inline=False)
     if r.get("confidence_reasons"):
         e.add_field(name="Confidence reasons", value="\n".join(f"• {x}" for x in r["confidence_reasons"][:6])[:1024], inline=False)
     if r.get("peers"):
