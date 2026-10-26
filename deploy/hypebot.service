@@ -1,0 +1,14 @@
+[Unit]
+Description=NFT Hype Discord Bot
+After=network-online.target
+
+[Service]
+WorkingDirectory=/opt/nft-hype-bot
+EnvironmentFile=/opt/nft-hype-bot/.env
+ExecStart=/opt/nft-hype-bot/.venv/bin/python -m hypebot
+Restart=on-failure
+RestartSec=10
+User=hypebot
+
+[Install]
+WantedBy=multi-user.target

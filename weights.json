@@ -1,0 +1,11 @@
+{
+  "weights": {
+    "engagement_quality": 25,
+    "community_discussion": 20,
+    "growth_momentum": 20,
+    "influential_engagement": 10,
+    "posting_consistency": 10,
+    "project_credibility": 10,
+    "cross_platform": 5
+  }
+}

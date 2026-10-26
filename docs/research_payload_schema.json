@@ -1,0 +1,408 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Research evidence payload (feeder -> scripts/research_feed.py submit <job_id> <file>)",
+ "description": "Validated by hypebot/research/evidence.py. Every claim needs source_url to count as a verified observation; claims without one are stored as UNVERIFIED and never shown as facts. Art ratings are stored as labeled judgment.",
+ "type": "object",
+ "required": [
+  "source",
+  "job_id",
+  "collected_at"
+ ],
+ "properties": {
+  "source": {
+   "const": "grokbot-research"
+  },
+  "job_id": {
+   "type": "integer"
+  },
+  "collected_at": {
+   "type": "string",
+   "format": "date-time"
+  },
+  "coingecko_id": {
+   "type": "string",
+   "description": "optional CoinGecko NFT id if listed"
+  },
+  "identity": {
+   "type": "object",
+   "properties": {
+    "official_x": {
+     "type": "string"
+    },
+    "website": {
+     "type": "string"
+    },
+    "discord": {
+     "type": "string"
+    },
+    "marketplaces": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "enum": [
+         "opensea",
+         "magiceden",
+         "magiceden_sol",
+         "other"
+        ]
+       },
+       "slug": {
+        "type": "string"
+       },
+       "url": {
+        "type": "string"
+       },
+       "chain": {
+        "type": "string"
+       },
+       "contract": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "people": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "role": {
+        "type": "string"
+       },
+       "handle": {
+        "type": "string"
+       },
+       "url": {
+        "type": "string"
+       }
+      }
+     }
+    }
+   }
+  },
+  "category": {
+   "type": "object",
+   "properties": {
+    "primary": {
+     "enum": [
+      "artist_led",
+      "pfp",
+      "generative_art",
+      "gaming",
+      "brand_ip",
+      "membership_utility",
+      "derivative",
+      "experimental",
+      "unknown"
+     ]
+    },
+    "secondary": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "mint_type": {
+     "enum": [
+      "free",
+      "paid",
+      "unknown"
+     ]
+    },
+    "stage": {
+     "enum": [
+      "pre_mint",
+      "minting",
+      "post_mint",
+      "unknown"
+     ]
+    },
+    "source_url": {
+     "type": "string"
+    }
+   }
+  },
+  "claims": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "claim"
+    ],
+    "properties": {
+     "claim": {
+      "type": "string"
+     },
+     "section": {
+      "enum": [
+       "identity",
+       "x_interest",
+       "team",
+       "art",
+       "market",
+       "category",
+       "community"
+      ]
+     },
+     "kind": {
+      "enum": [
+       "observation",
+       "assumption",
+       "judgment"
+      ],
+      "default": "observation"
+     },
+     "signal": {
+      "enum": [
+       "official_link",
+       "team_prior_collection",
+       "team_delivery_record",
+       "team_known_identity",
+       "team_misleading_claim",
+       "team_abandonment",
+       "copy_evidence",
+       "art_quality",
+       "art_originality",
+       "art_consistency",
+       "respected_account_engaged",
+       "giveaway_driven",
+       "paid_promotion",
+       "utility_delivered",
+       "milestone",
+       "market_fact",
+       "community_quality"
+      ]
+     },
+     "value": {
+      "type": "number",
+      "description": "range depends on signal (see docs/RESEARCH.md)"
+     },
+     "source_url": {
+      "type": "string"
+     },
+     "source_name": {
+      "type": "string"
+     },
+     "account": {
+      "type": "string"
+     },
+     "posted_at": {
+      "type": "string",
+      "format": "date-time"
+     },
+     "engagement": {
+      "type": "object"
+     },
+     "why": {
+      "type": "string"
+     },
+     "data": {
+      "type": "object",
+      "description": "official_link: {from_kind,to_kind} in x|website|marketplace|discord|artist"
+     }
+    }
+   }
+  },
+  "art": {
+   "type": "object",
+   "properties": {
+    "images": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "url"
+      ],
+      "properties": {
+       "url": {
+        "type": "string"
+       },
+       "role": {
+        "enum": [
+         "project",
+         "reference"
+        ]
+       },
+       "label": {
+        "type": "string"
+       },
+       "source_url": {
+        "type": "string"
+       }
+      }
+     }
+    }
+   }
+  },
+  "unavailable": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "source"
+    ],
+    "properties": {
+     "source": {
+      "type": "string"
+     },
+     "reason": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "notes": {
+   "type": "string"
+  },
+  "visual_review": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "description": "Visual review by the feeder agent. An image counts as viewed only if local_path exists on the box and its sha256 matches. Artwork is VERIFIED with ≥3 such official images plus quality & consistency checks.",
+   "required": [
+    "reviewer",
+    "reviewed_at",
+    "images",
+    "checks"
+   ],
+   "properties": {
+    "reviewer": {
+     "const": "grokbot-feeder-visual"
+    },
+    "reviewed_at": {
+     "type": "string",
+     "format": "date-time"
+    },
+    "images": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "url",
+       "local_path",
+       "sha256",
+       "viewed"
+      ],
+      "properties": {
+       "url": {
+        "type": "string"
+       },
+       "source_url": {
+        "type": "string",
+        "description": "official page where the image appears"
+       },
+       "local_path": {
+        "type": "string",
+        "description": "file downloaded under /workspace/nft-hype-bot/x_ingest/art/"
+       },
+       "sha256": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+       },
+       "official": {
+        "type": "boolean"
+       },
+       "viewed": {
+        "type": "boolean"
+       }
+      }
+     }
+    },
+    "checks": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "check",
+       "judgment"
+      ],
+      "properties": {
+       "check": {
+        "enum": [
+         "quality",
+         "consistency",
+         "variation",
+         "originality_indicators",
+         "suspicious_similarity"
+        ]
+       },
+       "judgment": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1,
+        "description": "1 = good / no concern. Opinion, not fact."
+       },
+       "notes": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "download_failures": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "url": {
+        "type": "string"
+       },
+       "reason": {
+        "type": "string"
+       }
+      }
+     }
+    }
+   }
+  },
+  "attempts": {
+   "type": "array",
+   "description": "Every source the feeder tried (also failures).",
+   "items": {
+    "type": "object",
+    "required": [
+     "source",
+     "outcome"
+    ],
+    "properties": {
+     "check": {
+      "enum": [
+       "identity",
+       "official_x",
+       "team",
+       "track_record",
+       "artwork",
+       "community",
+       "organic",
+       "mint_details",
+       "marketplace",
+       "benchmark",
+       "conflicts",
+       "other"
+      ]
+     },
+     "source": {
+      "type": "string"
+     },
+     "target": {
+      "type": "string"
+     },
+     "outcome": {
+      "enum": [
+       "success",
+       "not_found",
+       "temporary_error",
+       "blocked",
+       "invalid"
+      ]
+     },
+     "error": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

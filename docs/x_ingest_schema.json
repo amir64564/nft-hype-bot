@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Externally collected X data for nft-hype-bot",
+  "type": "object",
+  "required": [
+    "source",
+    "collected_at",
+    "account",
+    "recent_posts"
+  ],
+  "properties": {
+    "source": {
+      "const": "grokbot-x-read"
+    },
+    "collected_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "account": {
+      "type": "object",
+      "required": [
+        "followers"
+      ],
+      "properties": {
+        "username": {
+          "type": "string",
+          "description": "Must equal the requested handle (case-insensitive) or the payload is rejected"
+        },
+        "name": {
+          "type": "string"
+        },
+        "followers": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "following": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "tweet_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "listed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "verified_type": {
+          "type": "string",
+          "enum": [
+            "blue",
+            "business",
+            "government",
+            "none"
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "recent_posts": {
+      "type": "array",
+      "description": "The account's own recent posts (not reposts), ideally 20-100.",
+      "items": {
+        "type": "object",
+        "required": [
+          "created_at",
+          "likes",
+          "replies",
+          "reposts"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "likes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "replies": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "reposts": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "quotes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "views": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "author_handle": {
+            "type": "string",
+            "description": "Must equal account.username; posts by other accounts are excluded and counted"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "original",
+              "reply",
+              "repost",
+              "quote"
+            ],
+            "description": "reply/repost are excluded from official-account metrics"
+          }
+        }
+      }
+    },
+    "mention_counts": {
+      "type": "array",
+      "description": "Optional daily mention counts (X counts/recent, granularity=day) for the last 7 days.",
+      "items": {
+        "type": "object",
+        "required": [
+          "start",
+          "end",
+          "tweet_count"
+        ],
+        "properties": {
+          "start": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "end": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "tweet_count": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "mentions": {
+      "type": "array",
+      "description": "Recent posts by OTHER accounts mentioning the project (last ~7 days). Omit if not collected (treated as missing, not zero).",
+      "items": {
+        "type": "object",
+        "required": [
+          "author_handle",
+          "created_at"
+        ],
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "author_handle": {
+            "type": "string"
+          },
+          "author_followers": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "author_created_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "author_verified_type": {
+            "type": "string"
+          },
+          "likes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "replies": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "reposts": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "id": {
+            "type": "string",
+            "description": "Post id; used for de-duplication (a content hash is used if absent)"
+          }
+        }
+      }
+    }
+  },
+  "description": "All counts must be raw integers (no 12.5K / thousands units). Validated by hypebot/external_x.py before scoring."
+}

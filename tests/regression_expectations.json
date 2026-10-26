@@ -1,0 +1,15 @@
+{
+  "_doc": "Expected v2.0 hype outcomes for REAL previously evaluated X datasets in x_ingest/. These are regression expectations (documented outcomes of algorithm v2.0 on fixed inputs), NOT rules inside the scoring code. Rationale explains why each outcome is evidence-justified. Update deliberately (with a version bump) if the algorithm changes; user-provided expected tiers may later replace these.",
+  "cases": [
+    {"file": "req1",      "handle": "minehood_rh",    "name": "Minehood",       "ranked": true,  "tier": 2, "confidence": "High",   "score": [77, 82], "why": "13 posts, strong engagement + 21.5k mentions/7d; 49% wallet-address replies keep community below max"},
+    {"file": "req2",      "handle": "brixes_xyz",     "name": "Brixes",         "ranked": false, "tier": null, "confidence": "Low", "score": [38, 47], "why": "only 2 official posts: cannot support a tier"},
+    {"file": "req2_full", "handle": "brixes_xyz",     "name": "Brixes",         "ranked": true,  "tier": 3, "confidence": "Medium", "score": [44, 52], "why": "25 posts, modest per-post engagement, 88% low-effort/promo mentions"},
+    {"file": "req6",      "handle": "lildudes_",      "name": "LilDudes",       "ranked": true,  "tier": 2, "confidence": "Medium", "score": [60, 68], "why": "one post carries 56% of engagement; 67% wallet-address replies"},
+    {"file": "req7",      "handle": "GigaLegendsLTD", "name": "GigaLegendsLTD", "ranked": false, "tier": null, "confidence": "Low", "score": [55, 68], "why": "1 official post: viral post alone cannot rank"},
+    {"file": "req8",      "handle": "nuloraio",       "name": "Nuloraio",       "ranked": true,  "tier": 3, "confidence": "Medium", "score": [48, 57], "why": "8 posts but 87% of engagement in one post"},
+    {"file": "inkvire",   "handle": "inkvire",        "name": "Inkvire",        "ranked": false, "tier": null, "confidence": "Low", "score": [24, 35], "why": "0 official posts; influential repliers concentrated in one promoter thread"},
+    {"file": "req11",     "handle": "freedznft",      "name": "Freedznft",      "ranked": true,  "tier": 3, "confidence": "Medium", "score": [55, 64], "why": "moderate engagement and discussion"},
+    {"file": "req12",     "handle": "therebelkins",   "name": "Therebelkins",   "ranked": true,  "tier": 3, "confidence": "Medium", "score": [46, 55], "why": "moderate engagement, weaker discussion"},
+    {"file": "req13",     "handle": "LootPlanetsRH",  "name": "LootPlanetsRH",  "ranked": true,  "tier": 4, "confidence": "Medium", "score": [34, 43], "why": "low mention volume and no measurable momentum"}
+  ]
+}

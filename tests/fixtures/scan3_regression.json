@@ -1,0 +1,1076 @@
+{
+ "_note": "REAL data exported from hypebot.db (scan_3_projects.json, 2026-10-22). Used as regression input; not synthetic.",
+ "GigaLegendsLTD": {
+  "project": {
+   "id": 4,
+   "handle": "GigaLegendsLTD"
+  },
+  "snapshot": {
+   "id": 16,
+   "hype_score": 67.1,
+   "tier": null,
+   "confidence": 0.686,
+   "confidence_label": "Low",
+   "metrics": {
+    "as_of": "2026-10-22T11:06:14.797983+00:00",
+    "data_source": "grokbot-x-read",
+    "followers": 4890,
+    "following": 1,
+    "tweet_count": 34,
+    "listed": 11,
+    "verified": true,
+    "verified_type": "business",
+    "account_age_days": 8,
+    "has_bio": true,
+    "protected": false,
+    "has_links": false,
+    "posts_supplied": 34,
+    "posts_excluded_foreign": 0,
+    "posts_excluded_replies": 32,
+    "posts_excluded_duplicates": 0,
+    "posts_excluded_future": 0,
+    "sample_tweets": 2,
+    "avg_likes": 1576,
+    "avg_reposts": 287,
+    "avg_replies": 829.5,
+    "avg_quotes": 127.5,
+    "avg_engagement": 2820,
+    "median_engagement": 2820.0,
+    "trimmed_mean_engagement": 2820,
+    "posts_with_views": 2,
+    "avg_views": 77377,
+    "median_views": 77377.0,
+    "view_engagement_rate": 0.03644493841839306,
+    "unit_anomaly_posts": 0,
+    "engagement_rate": 0.5766871165644172,
+    "conversation_ratio": 0.3393617021276596,
+    "top_post_share": 0.724645390070922,
+    "posts_last_30d": 2,
+    "days_since_last_post": 0.6121851618402777,
+    "mentions_supplied": 49,
+    "mentions_sample": 49,
+    "mention_unique_authors": 35,
+    "duplicate_text_ratio": 0.0,
+    "wallet_address_ratio": 0.0,
+    "low_effort_ratio": 0.5102040816326531,
+    "promo_or_low_effort_ratio": 0.5102040816326531,
+    "repeat_author_ratio": 0.42857142857142855,
+    "top_author_share": 0.1836734693877551,
+    "independent_authors": 21,
+    "distinct_substantive_texts": 24,
+    "top_thread_share": 0.2857142857142857,
+    "mentions_sample_span_hours": 0.49,
+    "new_account_ratio": 0.0,
+    "real_author_ratio": 0.9142857142857143,
+    "author_followers_coverage": 1.0,
+    "influential_mentioners": 8,
+    "influential_relevant": 7,
+    "influential_threads": 5,
+    "influential_names": [
+     "alteperfect",
+     "beardegen_eth",
+     "bewise0",
+     "koyum_1",
+     "moha_web3",
+     "only__violet",
+     "uniquesingh__"
+    ],
+    "mentions_7d_total": 6009,
+    "mention_counts_hours": 168.0,
+    "mentions_peak_per_day": 3584.0,
+    "mentions_recent_per_day": 2344.7071156259844,
+    "mention_velocity_change": 44.08453309060123
+   },
+   "missing": [
+    "posting_consistency"
+   ],
+   "flags": [
+    "72% of official engagement comes from a single post"
+   ],
+   "algorithm_version": "v2.0"
+  },
+  "job": {
+   "id": 1,
+   "hints": {
+    "user_marketplaces": [],
+    "user_website": null,
+    "category": {
+     "primary": "unknown",
+     "secondary": [
+      "gaming",
+      "brand_ip"
+     ],
+     "mint_type": "unknown",
+     "stage": "pre_mint",
+     "source_url": "https://x.com/GigaLegendsLTD/status/2112305669869318416"
+    },
+    "links": {
+     "official_x": "https://x.com/GigaLegendsLTD",
+     "website": null,
+     "discord": null
+    },
+    "marketplaces": [],
+    "people": [
+     {
+      "role": "founder",
+      "handle": "0xDith",
+      "url": "https://x.com/0xDith"
+     }
+    ],
+    "images": [
+     {
+      "url": "https://pbs.twimg.com/media/HVLlieCW4AAnDfT.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/GigaLegendsLTD/status/2113003567300956536"
+     },
+     {
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2112305655470288896/img/403E0CYAbz5dQsl3.jpg",
+      "role": "project",
+      "label": "video thumbnail",
+      "source_url": "https://x.com/GigaLegendsLTD/status/2112305669869318416"
+     }
+    ],
+    "feeder_notes": "Category left unknown: posts are teasers only. Founder posts (via nitter mirror, not used as claims) mention WL/collabs not yet announced.",
+    "coingecko_id": null,
+    "bot_sources_done": true,
+    "image_hashes": [
+     {
+      "url": "https://pbs.twimg.com/media/HVLlieCW4AAnDfT.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/GigaLegendsLTD/status/2113003567300956536",
+      "phash": "cf99399932666626",
+      "size": [
+       1199,
+       675
+      ]
+     },
+     {
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2112305655470288896/img/403E0CYAbz5dQsl3.jpg",
+      "role": "project",
+      "label": "video thumbnail",
+      "source_url": "https://x.com/GigaLegendsLTD/status/2112305669869318416",
+      "phash": "fcfcfcf8f8e00000",
+      "size": [
+       800,
+       450
+      ]
+     }
+    ]
+   },
+   "unavailable": [
+    {
+     "source": "official website",
+     "reason": "No website link in X bio or posts read"
+    },
+    {
+     "source": "marketplace (OpenSea/Magic Eden)",
+     "reason": "No Giga Legends collection found; not on Gigaverse official links page; likely pre-mint"
+    },
+    {
+     "source": "Discord",
+     "reason": "No project-specific Discord link seen (Gigaverse links discord.gg/glhfers)"
+    },
+    {
+     "source": "art quality judgment",
+     "reason": "Images not visually reviewed this run"
+    }
+   ]
+  },
+  "evidence": [
+   {
+    "id": 1,
+    "section": "identity",
+    "kind": "observation",
+    "claim": "@GigaLegendsLTD X bio links to @Gigaverse (\"Legendary collectibles at the heart of @Gigaverse\")",
+    "source_url": "https://x.com/GigaLegendsLTD",
+    "signal": "official_link",
+    "value": 1.0,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": {
+     "from_kind": "x",
+     "to_kind": "x"
+    }
+   },
+   {
+    "id": 2,
+    "section": "identity",
+    "kind": "observation",
+    "claim": "@0xDith X bio says founder @gigaverse @gigalegendsltd",
+    "source_url": "https://x.com/0xDith",
+    "signal": "official_link",
+    "value": 1.0,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": {
+     "from_kind": "artist",
+     "to_kind": "x"
+    }
+   },
+   {
+    "id": 3,
+    "section": "team",
+    "kind": "observation",
+    "claim": "Founder is public: @0xDith (~105K followers), bio 'founder @gigaverse @gigalegendsltd, prev @stripe'",
+    "source_url": "https://x.com/0xDith",
+    "signal": "team_known_identity",
+    "value": 0.8,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 4,
+    "section": "team",
+    "kind": "observation",
+    "claim": "Gigaverse's official links page lists prior Gigaverse collections on OpenSea (ROMs, Giglings, Items) and GLHFers; Giga Legends is not listed there yet",
+    "source_url": "https://docs.gigaverse.io/general/links-and-contracts",
+    "signal": "team_prior_collection",
+    "value": 0.5,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 5,
+    "section": "market",
+    "kind": "observation",
+    "claim": "Account created 2026-10-14; teaser posts 'Legends, it's almost time' (Oct 19) and 'The collection at the heart of Gigaverse' (Oct 21); no mint date, price, supply or contract published in posts read",
+    "source_url": "https://x.com/GigaLegendsLTD/status/2113003567300956536",
+    "signal": "milestone",
+    "value": 0.0,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 6,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Many of the most-followed recent mentions are multi-project tag lists (e.g. 'Projects I'm bullish on' listing 10+ projects) rather than standalone coverage",
+    "source_url": "https://x.com/uniquesingh__/status/2113219632223969301",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 14,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: Legends, it's almost time. https://t.co/al64p3XMHA",
+    "source_url": "https://x.com/GigaLegendsLTD/status/2112305669869318416",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   },
+   {
+    "id": 15,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: The collection at the heart of Gigaverse. https://t.co/CZxvJjI25b",
+    "source_url": "https://x.com/GigaLegendsLTD/status/2113003567300956536",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   },
+   {
+    "id": 16,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: @0xDith legend maximus",
+    "source_url": "https://x.com/GigaLegendsLTD/status/2112307657948459326",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   },
+   {
+    "id": 17,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: @YeditOfficial https://t.co/iFsPHVxUyl",
+    "source_url": "https://x.com/GigaLegendsLTD/status/2112342320515625180",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   },
+   {
+    "id": 18,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: @h331n95 GLHF legend",
+    "source_url": "https://x.com/GigaLegendsLTD/status/2112311344267456613",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   }
+  ],
+  "old_result": {
+   "verdict": "Needs More Research",
+   "tier": null,
+   "confidence": 0.965,
+   "confidence_label": "Low"
+  }
+ },
+ "Conso": {
+  "project": {
+   "id": 10,
+   "handle": "conso_xyz"
+  },
+  "snapshot": {
+   "id": 17,
+   "hype_score": 75.1,
+   "tier": 2,
+   "confidence": 0.691,
+   "confidence_label": "Medium",
+   "metrics": {
+    "as_of": "2026-10-22T11:06:14.797983+00:00",
+    "data_source": "grokbot-x-read",
+    "followers": 38307,
+    "following": 185,
+    "tweet_count": 12627,
+    "listed": 20,
+    "verified": true,
+    "verified_type": "business",
+    "account_age_days": 443,
+    "has_bio": true,
+    "protected": false,
+    "has_links": true,
+    "posts_supplied": 50,
+    "posts_excluded_foreign": 0,
+    "posts_excluded_replies": 47,
+    "posts_excluded_duplicates": 0,
+    "posts_excluded_future": 0,
+    "sample_tweets": 3,
+    "avg_likes": 529.6666666666666,
+    "avg_reposts": 62.666666666666664,
+    "avg_replies": 177.66666666666666,
+    "avg_quotes": 27.666666666666668,
+    "avg_engagement": 797.6666666666666,
+    "median_engagement": 763,
+    "trimmed_mean_engagement": 560.5,
+    "posts_with_views": 3,
+    "avg_views": 16631,
+    "median_views": 13015,
+    "view_engagement_rate": 0.04796264004970637,
+    "unit_anomaly_posts": 0,
+    "engagement_rate": 0.01991803064714021,
+    "conversation_ratio": 0.2574174676138738,
+    "top_post_share": 0.5315503552026745,
+    "posts_last_30d": 3,
+    "days_since_last_post": 0.2590138655439815,
+    "posts_per_week": 21.0,
+    "post_gap_cv": 0.12169816314647183,
+    "mentions_supplied": 49,
+    "mentions_sample": 49,
+    "mention_unique_authors": 49,
+    "duplicate_text_ratio": 0.0,
+    "wallet_address_ratio": 0.0,
+    "low_effort_ratio": 0.5714285714285714,
+    "promo_or_low_effort_ratio": 0.5714285714285714,
+    "repeat_author_ratio": 0.0,
+    "top_author_share": 0.02040816326530612,
+    "independent_authors": 21,
+    "distinct_substantive_texts": 21,
+    "top_thread_share": 0.10204081632653061,
+    "mentions_sample_span_hours": 0.08694444444444445,
+    "new_account_ratio": 0.0,
+    "real_author_ratio": 0.9183673469387755,
+    "author_followers_coverage": 1.0,
+    "influential_mentioners": 16,
+    "influential_relevant": 10,
+    "influential_threads": 10,
+    "influential_names": [
+     "congthuat12",
+     "emmy_crrypto",
+     "h0giakhang",
+     "itsnessaonx",
+     "moha_web3",
+     "mounertain66967",
+     "mrloyy",
+     "peach77wckk",
+     "sadikur714",
+     "tearweb3"
+    ],
+    "mentions_7d_total": 256901,
+    "mention_counts_hours": 168.0,
+    "mentions_peak_per_day": 56900.0,
+    "mentions_recent_per_day": 38014.115479173226,
+    "mention_velocity_change": 0.056323227564619355
+   },
+   "missing": [],
+   "flags": [
+    "53% of official engagement comes from a single post"
+   ],
+   "algorithm_version": "v2.0"
+  },
+  "job": {
+   "id": 2,
+   "hints": {
+    "user_marketplaces": [],
+    "user_website": null,
+    "category": {
+     "primary": "membership_utility",
+     "secondary": [
+      "experimental"
+     ],
+     "mint_type": "free",
+     "stage": "pre_mint",
+     "source_url": "https://conso.xyz/bots"
+    },
+    "links": {
+     "official_x": "https://x.com/conso_xyz",
+     "website": "https://www.conso.xyz/",
+     "discord": null
+    },
+    "marketplaces": [],
+    "people": [],
+    "images": [
+     {
+      "url": "https://pbs.twimg.com/media/HVNZfPlbUAAhTvT.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/conso_xyz/status/2113131549973680637"
+     },
+     {
+      "url": "https://pbs.twimg.com/media/HVM6IuabEAAvxKJ.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/conso_xyz/status/2113096754170073285"
+     },
+     {
+      "url": "https://conso.xyz/bots/opengraph-image",
+      "role": "project",
+      "label": null,
+      "source_url": "https://conso.xyz/bots"
+     }
+    ],
+    "feeder_notes": "",
+    "coingecko_id": null,
+    "bot_sources_done": true,
+    "image_hashes": [
+     {
+      "url": "https://pbs.twimg.com/media/HVNZfPlbUAAhTvT.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/conso_xyz/status/2113131549973680637",
+      "phash": "ee72909d8363636a",
+      "size": [
+       1199,
+       675
+      ]
+     },
+     {
+      "url": "https://pbs.twimg.com/media/HVM6IuabEAAvxKJ.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/conso_xyz/status/2113096754170073285",
+      "phash": "b2826c28b3937cb7",
+      "size": [
+       1200,
+       675
+      ]
+     }
+    ]
+   },
+   "unavailable": [
+    {
+     "source": "marketplace (TradePort/other Sui)",
+     "reason": "Pre-mint; no collection page found"
+    },
+    {
+     "source": "team identity",
+     "reason": "No named founders found in sources read"
+    },
+    {
+     "source": "Discord",
+     "reason": "No Discord link seen"
+    },
+    {
+     "source": "art quality judgment",
+     "reason": "Images not visually reviewed this run"
+    },
+    {
+     "source": "image https://conso.xyz/bots/opengraph-image",
+     "reason": "ValueError: HTTP 500, 21 bytes"
+    }
+   ]
+  },
+  "evidence": [
+   {
+    "id": 7,
+    "section": "identity",
+    "kind": "observation",
+    "claim": "@conso_xyz X bio links to conso.xyz",
+    "source_url": "https://x.com/conso_xyz",
+    "signal": "official_link",
+    "value": 1.0,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": {
+     "from_kind": "x",
+     "to_kind": "website"
+    }
+   },
+   {
+    "id": 8,
+    "section": "identity",
+    "kind": "observation",
+    "claim": "@conso_xyz post links to conso.xyz/bots (eligibility checker & mint)",
+    "source_url": "https://x.com/conso_xyz/status/2113131549973680637",
+    "signal": "official_link",
+    "value": 1.0,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": {
+     "from_kind": "x",
+     "to_kind": "website"
+    }
+   },
+   {
+    "id": 9,
+    "section": "market",
+    "kind": "observation",
+    "claim": "CONSO BOTS: 5,555 supply, free mint on Sui, mint 22 Oct 2026 3 PM UTC (per X bio and SuiWire); SuiWire notes the announcement body said Oct 23",
+    "source_url": "https://suiwire.com/news/sui-in-60-seconds-2026-10-20",
+    "signal": "market_fact",
+    "value": null,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 10,
+    "section": "market",
+    "kind": "observation",
+    "claim": "Mint page lists Phase 1 GTD, Phase 2 FCFS, Phase 3 Public, all live at the same time; claim requires connecting X; bots give 25% network-power boost in CONSO Miner app",
+    "source_url": "https://conso.xyz/bots",
+    "signal": "market_fact",
+    "value": null,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 11,
+    "section": "market",
+    "kind": "observation",
+    "claim": "Impressions snapshot taken ~12h before mint ('The Impressions snapshot has been taken')",
+    "source_url": "https://x.com/conso_xyz/status/2113131549973680637",
+    "signal": "milestone",
+    "value": 0.3,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 12,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Part of the allocation is earned through X impressions on posts about CONSO, which incentivizes engagement-farming mentions; mentions read are dominated by reply chatter about eligibility/boosts",
+    "source_url": "https://suiwire.com/news/sui-in-60-seconds-2026-10-20",
+    "signal": "giveaway_driven",
+    "value": -0.5,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 13,
+    "section": "market",
+    "kind": "observation",
+    "claim": "SuiWire reports BOTS go through a lockup period before becoming tradable",
+    "source_url": "https://suiwire.com/news/sui-in-60-seconds-2026-10-20",
+    "signal": "market_fact",
+    "value": null,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 19,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: The Impressions snapshot has been taken \ud83d\udcf8\n\nThe countdown begins\ud83d\udc47\nhttps://t.co/dP6V920yOB https://t.co/AuIZtBxruM",
+    "source_url": "https://x.com/conso_xyz/status/2113131549973680637",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   },
+   {
+    "id": 20,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: CONSO BOTS are now powered by GROK BOT API\n\nWith GROK BOT API and MCP connectors powered by Composio, you\u2019ll be able to interact with connec",
+    "source_url": "https://x.com/conso_xyz/status/2113096754170073285",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   },
+   {
+    "id": 21,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: Just a CONSO BEAR talking to his BOTS https://t.co/jXIz6AgQlm",
+    "source_url": "https://x.com/conso_xyz/status/2113052314751926542",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   },
+   {
+    "id": 22,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: \ud83c\udfc6 Meme Contest Winners Are Here!\n\nCongratulations to all the winners and a huge thank you to everyone who participated \ud83d\udc3b\u200d\u2744\ufe0f\u26a1\n\n@stellarlumens",
+    "source_url": "https://x.com/conso_xyz/status/2113133190869328097",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   },
+   {
+    "id": 23,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: @VinayRSabarad LFG",
+    "source_url": "https://x.com/conso_xyz/status/2113132868352479487",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   }
+  ],
+  "old_result": {
+   "verdict": "Needs More Research",
+   "tier": null,
+   "confidence": 0.883,
+   "confidence_label": "Medium"
+  }
+ },
+ "Minehood": {
+  "project": {
+   "id": 1,
+   "handle": "minehood_rh"
+  },
+  "snapshot": {
+   "id": 19,
+   "hype_score": 88.3,
+   "tier": 1,
+   "confidence": 0.905,
+   "confidence_label": "High",
+   "metrics": {
+    "as_of": "2026-10-22T11:22:10.333524+00:00",
+    "data_source": "grokbot-x-read",
+    "followers": 12771,
+    "following": 5,
+    "tweet_count": 15,
+    "listed": 16,
+    "verified": true,
+    "verified_type": "blue",
+    "account_age_days": 22,
+    "has_bio": true,
+    "protected": false,
+    "has_links": true,
+    "posts_supplied": 14,
+    "posts_excluded_foreign": 0,
+    "posts_excluded_replies": 1,
+    "posts_excluded_duplicates": 0,
+    "posts_excluded_future": 0,
+    "sample_tweets": 13,
+    "avg_likes": 1882.6153846153845,
+    "avg_reposts": 1371.6153846153845,
+    "avg_replies": 1369,
+    "avg_quotes": 25.76923076923077,
+    "avg_engagement": 4649,
+    "median_engagement": 3559,
+    "trimmed_mean_engagement": 3348.8333333333335,
+    "posts_with_views": 13,
+    "avg_views": 42436.46153846154,
+    "median_views": 36556,
+    "view_engagement_rate": 0.10955201803963935,
+    "unit_anomaly_posts": 0,
+    "engagement_rate": 0.27867825542244146,
+    "conversation_ratio": 0.3000148915399507,
+    "top_post_share": 0.33507619504608105,
+    "intra_sample_engagement_change": -0.2664792142791344,
+    "posts_last_30d": 13,
+    "days_since_last_post": 0.68195987875,
+    "posts_per_week": 7.025317076579542,
+    "post_gap_cv": 0.08383999778539288,
+    "mentions_supplied": 98,
+    "mentions_sample": 98,
+    "mention_unique_authors": 78,
+    "duplicate_text_ratio": 0.05,
+    "wallet_address_ratio": 0.0,
+    "low_effort_ratio": 0.5918367346938775,
+    "promo_or_low_effort_ratio": 0.6122448979591837,
+    "repeat_author_ratio": 0.32653061224489793,
+    "top_author_share": 0.061224489795918366,
+    "independent_authors": 33,
+    "distinct_substantive_texts": 38,
+    "top_thread_share": 0.1836734693877551,
+    "mentions_sample_span_hours": 1.2177777777777778,
+    "new_account_ratio": 0.0,
+    "real_author_ratio": 0.8846153846153846,
+    "author_followers_coverage": 1.0,
+    "influential_mentioners": 13,
+    "influential_relevant": 13,
+    "influential_threads": 5,
+    "influential_names": [
+     "bella_quack",
+     "duc_daily",
+     "duongphat99",
+     "habib_xyz8",
+     "koyum_1",
+     "l0ccapital",
+     "moha_web3",
+     "naxweb3",
+     "racer_xid",
+     "trappwurld"
+    ],
+    "mentions_7d_total": 22164,
+    "mention_counts_hours": 168.0,
+    "mentions_peak_per_day": 4859.0,
+    "mentions_recent_per_day": 2153.0959411839035,
+    "mention_velocity_change": -0.42118465536627325
+   },
+   "missing": [],
+   "flags": [],
+   "algorithm_version": "v2.0"
+  },
+  "job": {
+   "id": 4,
+   "hints": {
+    "user_marketplaces": [],
+    "user_website": null,
+    "category": {
+     "primary": "gaming",
+     "secondary": [
+      "pfp"
+     ],
+     "mint_type": "unknown",
+     "stage": "pre_mint",
+     "source_url": "https://x.com/minehood_rh/status/2110708603900371219"
+    },
+    "links": {
+     "official_x": "https://x.com/minehood_rh",
+     "website": "https://minehood.io",
+     "discord": null
+    },
+    "marketplaces": [],
+    "people": [
+     {
+      "role": "founder",
+      "handle": "ufukless1",
+      "url": "https://x.com/ufukless1"
+     }
+    ],
+    "images": [
+     {
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111832560674181121/img/zmumH1fErzLmDLvu.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/minehood_rh/status/2111833849856422334"
+     },
+     {
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2110708349385793536/img/Fv2r5ahl8OtscP-A.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/minehood_rh/status/2110708603900371219"
+     },
+     {
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2109584815515127808/img/xKIV5ZQhT_IyKbW2.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/minehood_rh/status/2109585867803414547"
+     },
+     {
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2112578603208544256/img/Hp2aeuZ8BNKrPcvP.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/minehood_rh/status/2112579175513014427"
+     },
+     {
+      "url": "https://pbs.twimg.com/media/HUMGGnLXUAEmQVU.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/minehood_rh/status/2108535773633155335"
+     }
+    ],
+    "feeder_notes": "Refreshed 2026-10-22: X profile and minehood.io re-read (same links/waitlist tasks); no new project posts since last research run.",
+    "coingecko_id": null,
+    "bot_sources_done": true,
+    "image_hashes": [
+     {
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2111832560674181121/img/zmumH1fErzLmDLvu.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/minehood_rh/status/2111833849856422334",
+      "phash": "94966b6bd9646465",
+      "size": [
+       1200,
+       675
+      ]
+     },
+     {
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2110708349385793536/img/Fv2r5ahl8OtscP-A.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/minehood_rh/status/2110708603900371219",
+      "phash": "a7cce09b1f70e126",
+      "size": [
+       1080,
+       1080
+      ]
+     },
+     {
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2109584815515127808/img/xKIV5ZQhT_IyKbW2.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/minehood_rh/status/2109585867803414547",
+      "phash": "d4963b6bf0648725",
+      "size": [
+       1200,
+       675
+      ]
+     },
+     {
+      "url": "https://pbs.twimg.com/amplify_video_thumb/2112578603208544256/img/Hp2aeuZ8BNKrPcvP.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/minehood_rh/status/2112579175513014427",
+      "phash": "d4962b7bf4648525",
+      "size": [
+       1200,
+       675
+      ]
+     },
+     {
+      "url": "https://pbs.twimg.com/media/HUMGGnLXUAEmQVU.jpg",
+      "role": "project",
+      "label": null,
+      "source_url": "https://x.com/minehood_rh/status/2108535773633155335",
+      "phash": "8e296498dec38e76",
+      "size": [
+       1200,
+       638
+      ]
+     }
+    ]
+   },
+   "unavailable": [
+    {
+     "source": "marketplace (OpenSea/Magic Eden)",
+     "reason": "Pre-mint; no collection page found"
+    },
+    {
+     "source": "Discord",
+     "reason": "No Discord link seen"
+    },
+    {
+     "source": "team prior collections",
+     "reason": "No prior collections found for the founder in sources read"
+    },
+    {
+     "source": "art quality judgment",
+     "reason": "Images not visually reviewed this run"
+    },
+    {
+     "source": "respected-account engagement",
+     "reason": "Not identified in mentions read this run; quoted mentions were mass-tag replies"
+    }
+   ]
+  },
+  "evidence": [
+   {
+    "id": 36,
+    "section": "identity",
+    "kind": "observation",
+    "claim": "@minehood_rh X profile links to minehood.io",
+    "source_url": "https://x.com/minehood_rh",
+    "signal": "official_link",
+    "value": 1.0,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": {
+     "from_kind": "x",
+     "to_kind": "website"
+    }
+   },
+   {
+    "id": 37,
+    "section": "identity",
+    "kind": "observation",
+    "claim": "minehood.io waitlist asks users to follow @minehood_rh",
+    "source_url": "https://minehood.io",
+    "signal": "official_link",
+    "value": 1.0,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": {
+     "from_kind": "website",
+     "to_kind": "x"
+    }
+   },
+   {
+    "id": 38,
+    "section": "team",
+    "kind": "observation",
+    "claim": "@minehood_rh names @ufukless1 as founder; @ufukless1 bio says 'Founder @minehood_rh' (account since 2009, ~16K followers). Real-world identity not verified",
+    "source_url": "https://x.com/minehood_rh/status/2112982289302872506",
+    "signal": "team_known_identity",
+    "value": 0.5,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 39,
+    "section": "market",
+    "kind": "observation",
+    "claim": "Announced supply: 4,444 pixel Miners ('MINEHOOD NFT IS COMING!'); price and mint date not announced",
+    "source_url": "https://x.com/minehood_rh/status/2110708603900371219",
+    "signal": "market_fact",
+    "value": null,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 40,
+    "section": "market",
+    "kind": "observation",
+    "claim": "Project says the Minehood beta is being tested; gameplay previews posted; bio says 'Coming soon to @RobinhoodApp'",
+    "source_url": "https://x.com/minehood_rh/status/2111446091606417673",
+    "signal": "milestone",
+    "value": 0.2,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 41,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Waitlist requires connecting X, following @minehood_rh and completing post tasks for XP on a leaderboard ('New posts bring new tasks'), which incentivizes task-driven engagement",
+    "source_url": "https://minehood.io",
+    "signal": "giveaway_driven",
+    "value": -0.4,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 42,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Project solicits collabs with communities ('opening a limited number of spots for strong communities')",
+    "source_url": "https://x.com/minehood_rh/status/2111105018317435254",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 43,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Largest-follower mentions in the latest ~100 mentions (e.g. @moha_web3 ~151K followers, @Vanquan_titans ~73K) are mass-tag replies listing many projects, not specific endorsements; no respected-collector engagement identified",
+    "source_url": "https://x.com/moha_web3/status/2113225143136715162",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "feeder",
+    "data": null
+   },
+   {
+    "id": 44,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: Something is digging under the town \u26cf\ufe0f\n\nMinehood is coming. Dig six mines. Break six bosses. Keep every gem you swing for \ud83d\udc8e\n\nThe waitlist is",
+    "source_url": "https://x.com/minehood_rh/status/2108535358849987035",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   },
+   {
+    "id": 45,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: MINEHOOD NFT IS COMING!\n \n4,444 unique pixel Miners are about to break out of the mine. \u26cf\ufe0f\ud83d\udc8e\n\nMore details dropping soon. \ud83d\udc40\n\nUntil then, join",
+    "source_url": "https://x.com/minehood_rh/status/2110708603900371219",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   },
+   {
+    "id": 46,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: +1,500 miners on the list! \u26cf\ufe0f \n\nNew posts bring new tasks. \ud83c\udfaf\n\nOn a tie, the earlier miner stays ahead. \ud83c\udfc6\n\n\ud83d\udc49 https://t.co/JJORjVySCh https://",
+    "source_url": "https://x.com/minehood_rh/status/2109247564084019500",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   },
+   {
+    "id": 47,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: We've been getting a lot of collab requests lately. \n\nWe'll be opening a limited number of spots for strong communities.\n\nThink yours is a g",
+    "source_url": "https://x.com/minehood_rh/status/2111105018317435254",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   },
+   {
+    "id": 48,
+    "section": "x_interest",
+    "kind": "observation",
+    "claim": "Official post: The Minehood beta is actively being tested behind the scenes. \ud83d\udc8e\n\nWe\u2019re getting closer to bringing the game to you, and we can\u2019t wait for you",
+    "source_url": "https://x.com/minehood_rh/status/2111446091606417673",
+    "signal": null,
+    "value": null,
+    "verified": 1,
+    "collected_by": "bot:x",
+    "data": null
+   }
+  ],
+  "old_result": {
+   "verdict": "Tier",
+   "tier": 3,
+   "confidence": 1.048,
+   "confidence_label": "High"
+  }
+ }
+}

@@ -1,0 +1,15 @@
+.env
+.venv/
+*.db
+*.db.bak*
+__pycache__/
+*.pyc
+.pytest_cache/
+bot.log
+bot.log.*
+bot.pid
+bot.log.tailstart
+x_ingest/
+export/
+*.bak-*
+.DS_Store
