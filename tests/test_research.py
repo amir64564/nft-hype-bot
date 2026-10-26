@@ -18,12 +18,13 @@ from hypebot.research.profiles import PROFILES
 from hypebot.research.audit import run_audit
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+from tests._paths import ingest_path
 EXP = json.loads((ROOT / "tests" / "regression_expectations.json").read_text())["cases"]
 W = load_weights(str(ROOT / "weights.json"))
 
 
 def real(name):
-    return json.loads((ROOT / "x_ingest" / f"{name}.json").read_text())
+    return json.loads(ingest_path(name).read_text())
 
 
 # ---------- regression on real datasets (expectations live in a fixture file, not in code) ----------

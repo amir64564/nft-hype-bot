@@ -1,0 +1,454 @@
+{
+ "source": "grokbot-x-read",
+ "collected_at": "2026-10-22T09:44:39Z",
+ "account": {
+  "username": "therebelkins",
+  "name": "The RebelKin",
+  "followers": 5967,
+  "following": 158,
+  "tweet_count": 473,
+  "listed": 23,
+  "created_at": "2026-08-15T18:50:50.000Z",
+  "verified": true,
+  "verified_type": "blue",
+  "description": "The RebelKin founded by @Morph_VGArt\n(an ai-art collection still in the building phases)",
+  "links": []
+ },
+ "recent_posts": [
+  {
+   "id": "2113040859688309158",
+   "text": "broski hit em with the 360 slide 😂 https://t.co/eU8r8cvb4K",
+   "created_at": "2026-10-21T22:52:54.000Z",
+   "likes": 71,
+   "replies": 14,
+   "reposts": 10,
+   "quotes": 0,
+   "author_handle": "therebelkins",
+   "views": 2156
+  },
+  {
+   "id": "2113005527714402693",
+   "text": "what we drinking rebels? https://t.co/CF3fsdbOOL",
+   "created_at": "2026-10-21T20:32:30.000Z",
+   "likes": 86,
+   "replies": 28,
+   "reposts": 14,
+   "quotes": 0,
+   "author_handle": "therebelkins",
+   "views": 2361
+  },
+  {
+   "id": "2112884102642667948",
+   "text": "I have a few corporate looking RebelKin\n\nhttps://t.co/7xrm6rrx46 https://t.co/cEfrBDTobj",
+   "created_at": "2026-10-21T12:30:00.000Z",
+   "likes": 109,
+   "replies": 38,
+   "reposts": 21,
+   "quotes": 0,
+   "author_handle": "therebelkins",
+   "views": 2708
+  },
+  {
+   "id": "2112870407057670639",
+   "text": "Grebels! https://t.co/SUkRO410Wx",
+   "created_at": "2026-10-21T11:35:34.000Z",
+   "likes": 179,
+   "replies": 81,
+   "reposts": 21,
+   "quotes": 5,
+   "author_handle": "therebelkins",
+   "views": 3410
+  },
+  {
+   "id": "2112747859694997546",
+   "text": "Heading to Marfa tomorrow for @artblocks_io event this week, never been before, so hopefully it's gonna be a fun few days.\n\nDon't worry, RebelKin progress will continue as planned. I am at 3800 currently.\n\ngn rebels https://t.co/2TtrKQLNax",
+   "created_at": "2026-10-21T03:28:37.000Z",
+   "likes": 135,
+   "replies": 50,
+   "reposts": 28,
+   "quotes": 0,
+   "author_handle": "therebelkins",
+   "views": 2783
+  },
+  {
+   "id": "2112640429703193021",
+   "text": "💀 https://t.co/tDbiWnJgA0",
+   "created_at": "2026-10-20T20:21:44.000Z",
+   "likes": 166,
+   "replies": 52,
+   "reposts": 23,
+   "quotes": 0,
+   "author_handle": "therebelkins",
+   "views": 2899
+  },
+  {
+   "id": "2112593167682002955",
+   "text": "thanks kyros https://t.co/NEwLSZ65PD",
+   "created_at": "2026-10-20T17:13:55.000Z",
+   "likes": 63,
+   "replies": 8,
+   "reposts": 5,
+   "quotes": 1,
+   "author_handle": "therebelkins",
+   "views": 2696
+  },
+  {
+   "id": "2112525187891544531",
+   "text": "could you see RebelKin having a PFP collection?\n\n(I'm just messing around here) https://t.co/4T0KXpAXQZ",
+   "created_at": "2026-10-20T12:43:48.000Z",
+   "likes": 232,
+   "replies": 107,
+   "reposts": 34,
+   "quotes": 8,
+   "author_handle": "therebelkins",
+   "views": 5881
+  },
+  {
+   "id": "2112507432362758335",
+   "text": "grebels https://t.co/rYQdkDhAMF",
+   "created_at": "2026-10-20T11:33:15.000Z",
+   "likes": 191,
+   "replies": 104,
+   "reposts": 36,
+   "quotes": 2,
+   "author_handle": "therebelkins",
+   "views": 3469
+  },
+  {
+   "id": "2112308766909858238",
+   "text": "Where I started - vs - Where I am now https://t.co/A0soKDA83S",
+   "created_at": "2026-10-19T22:23:49.000Z",
+   "likes": 168,
+   "replies": 50,
+   "reposts": 26,
+   "quotes": 0,
+   "author_handle": "therebelkins",
+   "views": 3297
+  },
+  {
+   "id": "2112299498353385482",
+   "text": "dope! https://t.co/WzQ2N55jWd",
+   "created_at": "2026-10-19T21:46:59.000Z",
+   "likes": 180,
+   "replies": 54,
+   "reposts": 28,
+   "quotes": 2,
+   "author_handle": "therebelkins",
+   "views": 3239
+  }
+ ],
+ "mentions": [
+  {
+   "text": "@dexclusve @therebelkins Gm dex",
+   "author_handle": "MayowaOnChain",
+   "created_at": "2026-10-22T09:43:24.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1962,
+   "author_created_at": "2023-12-22T22:05:03.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Crypto_Alpha12 @therebelkins Gm champ",
+   "author_handle": "KHomeez",
+   "created_at": "2026-10-22T09:40:51.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 3518,
+   "author_created_at": "2023-11-16T12:11:59.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "The 15 Top Tier NFT Watchlist\n\n• @hollows_nft  - 5,555 Supply\n• Moods by @goodvibesclub - 3,333 Supply\n• @hoojafun  - 4,444 Supply\n• @unvault  - 6,250 Supply\n• @THEBUFOS - TBA\n• @EthraShip - 1,500 Supply\n• @vibevibefun  - TBA\n• @FomiesNFT   - TBA\n• @OranguNation - TBA\n•",
+   "author_handle": "3bukaNFT",
+   "created_at": "2026-10-22T09:39:58.000Z",
+   "likes": 6,
+   "replies": 5,
+   "reposts": 1,
+   "author_followers": 3202,
+   "author_created_at": "2023-07-09T13:21:04.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@dexclusve @therebelkins Hii Dex\nGm",
+   "author_handle": "Andramichael5",
+   "created_at": "2026-10-22T09:37:59.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 2838,
+   "author_created_at": "2021-06-09T13:07:48.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Crypto_Alpha12 @therebelkins Good Morning Chinaza",
+   "author_handle": "0xJohnnE",
+   "created_at": "2026-10-22T09:31:35.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1502,
+   "author_created_at": "2023-04-14T08:09:16.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@dexclusve @therebelkins Gm",
+   "author_handle": "selor",
+   "created_at": "2026-10-22T09:26:15.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 239453,
+   "author_created_at": "2021-12-11T11:19:35.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Louisven007 @therebelkins Gm Louis",
+   "author_handle": "Juli_an_1",
+   "created_at": "2026-10-22T09:24:04.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 5276,
+   "author_created_at": "2024-05-20T12:52:18.000Z"
+  },
+  {
+   "text": "@Louisven007 @therebelkins morning louis",
+   "author_handle": "onchainelvis",
+   "created_at": "2026-10-22T09:24:01.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 2636,
+   "author_created_at": "2026-07-19T08:21:08.000Z"
+  },
+  {
+   "text": "@therebelkins Rebel team you mean",
+   "author_handle": "OyinAyoo",
+   "created_at": "2026-10-22T09:20:45.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 132,
+   "author_created_at": "2024-06-10T14:05:26.000Z"
+  },
+  {
+   "text": "@Crypto_Alpha12 @therebelkins you cooked this? looks really good",
+   "author_handle": "onchainelvis",
+   "created_at": "2026-10-22T09:20:16.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 2636,
+   "author_created_at": "2026-07-19T08:21:08.000Z"
+  },
+  {
+   "text": "@dexclusve @therebelkins GM Dex",
+   "author_handle": "Ayomi_szn",
+   "created_at": "2026-10-22T09:19:19.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 238,
+   "author_created_at": "2023-10-30T06:19:08.000Z"
+  },
+  {
+   "text": "@Crypto_Alpha12 @therebelkins Gm chinaza",
+   "author_handle": "mtkverse",
+   "created_at": "2026-10-22T09:16:38.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 13936,
+   "author_created_at": "2021-08-28T19:56:07.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@obafolds @therebelkins Gm Oba",
+   "author_handle": "Crypto_Alpha12",
+   "created_at": "2026-10-22T09:14:52.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1399,
+   "author_created_at": "2024-05-07T07:26:47.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Wolfmeta_X @therebelkins Gm wolf, have a good day",
+   "author_handle": "Crypto_Alpha12",
+   "created_at": "2026-10-22T09:14:34.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1399,
+   "author_created_at": "2024-05-07T07:26:47.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Flowy_Space @therebelkins Gm my siski",
+   "author_handle": "Crypto_Alpha12",
+   "created_at": "2026-10-22T09:13:53.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1399,
+   "author_created_at": "2024-05-07T07:26:47.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@tearweb3 @therebelkins Gm Tear, and you too ski",
+   "author_handle": "Crypto_Alpha12",
+   "created_at": "2026-10-22T09:13:40.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1399,
+   "author_created_at": "2024-05-07T07:26:47.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@P_riestess7 @therebelkins Gm beau",
+   "author_handle": "Crypto_Alpha12",
+   "created_at": "2026-10-22T09:13:18.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1399,
+   "author_created_at": "2024-05-07T07:26:47.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@MrBullish @therebelkins Good morning Bullish",
+   "author_handle": "Crypto_Alpha12",
+   "created_at": "2026-10-22T09:13:03.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1399,
+   "author_created_at": "2024-05-07T07:26:47.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Garvinjeet @therebelkins Gm mane",
+   "author_handle": "Crypto_Alpha12",
+   "created_at": "2026-10-22T09:12:39.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1399,
+   "author_created_at": "2024-05-07T07:26:47.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Ibromaxbboy @therebelkins Gm Zen!",
+   "author_handle": "Crypto_Alpha12",
+   "created_at": "2026-10-22T09:12:22.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1399,
+   "author_created_at": "2024-05-07T07:26:47.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@be_ttaa @therebelkins Betta of good life",
+   "author_handle": "Crypto_Alpha12",
+   "created_at": "2026-10-22T09:12:03.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1399,
+   "author_created_at": "2024-05-07T07:26:47.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Elixir577 @therebelkins I'm good granny, you?",
+   "author_handle": "Crypto_Alpha12",
+   "created_at": "2026-10-22T09:11:41.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1399,
+   "author_created_at": "2024-05-07T07:26:47.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Crypto_Alpha12 @therebelkins China, grebel",
+   "author_handle": "be_ttaa",
+   "created_at": "2026-10-22T09:07:28.000Z",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "author_followers": 644,
+   "author_created_at": "2024-09-20T19:11:59.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Crypto_Alpha12 @therebelkins Good morning Chinaza, may today end on a good note",
+   "author_handle": "Wolfmeta_X",
+   "created_at": "2026-10-22T09:02:40.000Z",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "author_followers": 10454,
+   "author_created_at": "2025-02-04T03:00:12.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@dexclusve @therebelkins gDEX",
+   "author_handle": "tyretroo",
+   "created_at": "2026-10-22T08:59:06.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 7032,
+   "author_created_at": "2022-07-07T06:58:56.000Z",
+   "author_verified_type": "blue"
+  }
+ ],
+ "mention_counts": [
+  {
+   "start": "2026-10-15T09:44:14.000Z",
+   "end": "2026-10-16T00:00:00.000Z",
+   "tweet_count": 419
+  },
+  {
+   "start": "2026-10-16T00:00:00.000Z",
+   "end": "2026-10-17T00:00:00.000Z",
+   "tweet_count": 663
+  },
+  {
+   "start": "2026-10-17T00:00:00.000Z",
+   "end": "2026-10-18T00:00:00.000Z",
+   "tweet_count": 534
+  },
+  {
+   "start": "2026-10-18T00:00:00.000Z",
+   "end": "2026-10-19T00:00:00.000Z",
+   "tweet_count": 253
+  },
+  {
+   "start": "2026-10-19T00:00:00.000Z",
+   "end": "2026-10-20T00:00:00.000Z",
+   "tweet_count": 829
+  },
+  {
+   "start": "2026-10-20T00:00:00.000Z",
+   "end": "2026-10-21T00:00:00.000Z",
+   "tweet_count": 950
+  },
+  {
+   "start": "2026-10-21T00:00:00.000Z",
+   "end": "2026-10-22T00:00:00.000Z",
+   "tweet_count": 813
+  },
+  {
+   "start": "2026-10-22T00:00:00.000Z",
+   "end": "2026-10-22T09:44:14.000Z",
+   "tweet_count": 242
+  }
+ ]
+}

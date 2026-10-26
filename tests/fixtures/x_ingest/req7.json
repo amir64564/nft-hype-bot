@@ -1,0 +1,878 @@
+{
+ "source": "grokbot-x-read",
+ "collected_at": "2026-10-21T15:00:00Z",
+ "account": {
+  "username": "GigaLegendsLTD",
+  "name": "Giga Legends",
+  "followers": 4443,
+  "following": 1,
+  "tweet_count": 26,
+  "listed": 11,
+  "created_at": "2026-10-14T09:32:15.000Z",
+  "verified": true,
+  "verified_type": "business",
+  "description": "Legendary collectibles at the heart of @Gigaverse.",
+  "links": []
+ },
+ "recent_posts": [
+  {
+   "id": "2112305669869318416",
+   "text": "Legends, it's almost time. https://t.co/al64p3XMHA",
+   "created_at": "2026-10-19T22:11:31.000Z",
+   "likes": 2131,
+   "replies": 1201,
+   "reposts": 403,
+   "quotes": 174,
+   "author_handle": "GigaLegendsLTD",
+   "views": 112877
+  }
+ ],
+ "mentions": [
+  {
+   "text": "RIP to my inbox the last 24 hours. I will respond to DMs soon as I can. Thanks for the patience. Until we communicate anything about WL / collabs, if you like the look of @GigaLegendsLTD you should probably check out GLHFers &amp; Gigaverse ROMs. https://t.co/zBpvbiT5hh",
+   "author_handle": "nyeffz",
+   "created_at": "2026-10-21T14:59:29.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 4754,
+   "author_created_at": "2019-07-29T19:19:38.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@0xDith @GigaLegendsLTD gib wl for my girlies https://t.co/xdCPdnHO78",
+   "author_handle": "adam_g13",
+   "created_at": "2026-10-21T14:56:31.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 171,
+   "author_created_at": "2025-02-26T07:53:04.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@polkaguy @GigaLegendsLTD @0xDith Positioned",
+   "author_handle": "Michael98417",
+   "created_at": "2026-10-21T14:54:47.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 708,
+   "author_created_at": "2024-08-25T06:01:47.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@bastien0x @THEBUFOS @conso_xyz @vibevibefun @unvault @boldpfps @hollows_nft @GigaLegendsLTD @FungoLabs @IThinkItsArt @PlayOnMint @irigenerative @Embervale_ @VaultStreet_rh @OranguNation Giga list here",
+   "author_handle": "Michael98417",
+   "created_at": "2026-10-21T14:54:03.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 708,
+   "author_created_at": "2024-08-25T06:01:47.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi Huge news! 🌕",
+   "author_handle": "LingammalAmy",
+   "created_at": "2026-10-21T14:53:33.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 0,
+   "author_created_at": "2026-10-16T03:16:39.000Z"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi Quality work, love seeing the progress!!",
+   "author_handle": "Katherinezw2t",
+   "created_at": "2026-10-21T14:50:45.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 0,
+   "author_created_at": "2026-10-16T00:33:03.000Z"
+  },
+  {
+   "text": "@akagami58 @GigaLegendsLTD @0xDith Great alpha thanks boss",
+   "author_handle": "theHaneth",
+   "created_at": "2026-10-21T14:49:59.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 31568,
+   "author_created_at": "2021-04-09T09:58:56.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@akagami58 @GigaLegendsLTD @0xDith keeping this one on the radar",
+   "author_handle": "AdriansCryptoo",
+   "created_at": "2026-10-21T14:49:29.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 19819,
+   "author_created_at": "2018-09-16T21:27:08.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi cool",
+   "author_handle": "allenyeh1203",
+   "created_at": "2026-10-21T14:47:04.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1413,
+   "author_created_at": "2021-12-24T15:11:03.000Z"
+  },
+  {
+   "text": "@sorenaaro_ @GigaLegendsLTD @0xDith Ggiga",
+   "author_handle": "iam_bigten",
+   "created_at": "2026-10-21T14:47:00.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 355,
+   "author_created_at": "2025-11-04T11:23:03.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@inwrld_ @GigaLegendsLTD @gigaverse Heal us",
+   "author_handle": "iam_bigten",
+   "created_at": "2026-10-21T14:45:14.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 355,
+   "author_created_at": "2025-11-04T11:23:03.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@iam_bigten @GigaLegendsLTD @gigaverse But their WL will heal me",
+   "author_handle": "inwrld_",
+   "created_at": "2026-10-21T14:44:44.000Z",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "author_followers": 810,
+   "author_created_at": "2024-11-14T15:22:10.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Demmyweb3 @GigaLegendsLTD @playgigaverse Seated for this",
+   "author_handle": "multiverse_lord",
+   "created_at": "2026-10-21T14:44:17.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 496,
+   "author_created_at": "2022-03-20T09:16:34.000Z"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi will check this list, thankss waynel",
+   "author_handle": "_ManonXYZ",
+   "created_at": "2026-10-21T14:44:13.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 26,
+   "author_created_at": "2025-09-02T16:33:54.000Z"
+  },
+  {
+   "text": "@GigaLegendsLTD Lets go",
+   "author_handle": "m0lt1santi",
+   "created_at": "2026-10-21T14:43:57.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 10,
+   "author_created_at": "2021-08-06T17:23:20.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@akagami58 @GigaLegendsLTD @0xDith watching closely 👀",
+   "author_handle": "DmitriyUngarov",
+   "created_at": "2026-10-21T14:43:04.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 12579,
+   "author_created_at": "2021-05-27T09:44:32.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@0xquinneth @GigaLegendsLTD @0xDith @0xgarnish @hollows_nft @0itsali0 @RYFTCORP @neutanent @zerufinance @Ashutosh_Sahoo All OGs here…",
+   "author_handle": "boymeetsh00d",
+   "created_at": "2026-10-21T14:42:41.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 7944,
+   "author_created_at": "2026-08-26T15:35:43.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi My Fella is ready. Joining the @ordfellaz crew. Ops opssss, looks like me irl tho GG https://t.co/jmTBv7eV9N",
+   "author_handle": "WayneL_",
+   "created_at": "2026-10-21T14:42:33.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 30259,
+   "author_created_at": "2022-01-06T08:07:10.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@GigaLegendsLTD That teaser has us curious. The anticipation around a new collectible world is real. Looking forward to seeing the Legends reveal. 🐦✨",
+   "author_handle": "pigeonsofny",
+   "created_at": "2026-10-21T14:41:05.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 632,
+   "author_created_at": "2024-10-10T04:14:12.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@DiivaMira @GigaLegendsLTD @0xDith @gigaverse Let's see how it goes",
+   "author_handle": "World100x",
+   "created_at": "2026-10-21T14:40:41.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 3547,
+   "author_created_at": "2020-01-15T09:38:38.000Z"
+  },
+  {
+   "text": "@aphkenneth @gigaverse @GigaLegendsLTD @0xDith i know so many people 😆🤮",
+   "author_handle": "nyeffz",
+   "created_at": "2026-10-21T14:40:02.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 4754,
+   "author_created_at": "2019-07-29T19:19:38.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@GigaLegendsLTD Readyyy",
+   "author_handle": "AhmadSyayid",
+   "created_at": "2026-10-21T14:38:29.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 321,
+   "author_created_at": "2021-04-03T15:06:04.000Z"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi goodluckck",
+   "author_handle": "SilentRogue94",
+   "created_at": "2026-10-21T14:37:07.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 64,
+   "author_created_at": "2024-06-18T09:57:01.000Z"
+  },
+  {
+   "text": "@GigaLegendsLTD Early",
+   "author_handle": "Lufy9Sol",
+   "created_at": "2026-10-21T14:37:06.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 396,
+   "author_created_at": "2022-11-27T03:08:08.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@polkaguy @GigaLegendsLTD @0xDith 🥳👀 well deserved, consistency pays off!",
+   "author_handle": "Audreyxwrl",
+   "created_at": "2026-10-21T14:35:43.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 0,
+   "author_created_at": "2026-10-16T01:00:25.000Z"
+  },
+  {
+   "text": "@polkaguy @GigaLegendsLTD @0xDith Love this, great things ahead 🌕",
+   "author_handle": "melissa13id6",
+   "created_at": "2026-10-21T14:34:38.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 0,
+   "author_created_at": "2026-10-17T23:39:28.000Z"
+  },
+  {
+   "text": "@polkaguy @GigaLegendsLTD @0xDith ✅✅ Solid work, this is only the beginning!",
+   "author_handle": "Katherinezw2t",
+   "created_at": "2026-10-21T14:34:31.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 0,
+   "author_created_at": "2026-10-16T00:33:03.000Z"
+  },
+  {
+   "text": "@polkaguy @GigaLegendsLTD @0xDith Bullish on this! ❤️",
+   "author_handle": "Skye6vbh",
+   "created_at": "2026-10-21T14:34:29.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1,
+   "author_created_at": "2026-10-16T00:53:35.000Z"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi Og list 🔥🔥",
+   "author_handle": "Crypto_Jackxx",
+   "created_at": "2026-10-21T14:33:51.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1217,
+   "author_created_at": "2025-12-26T13:23:57.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@ToxiC5501 @YieldFields_RH @GigaLegendsLTD @playcambria @Moku_HQ Take a look at our project 👋",
+   "author_handle": "villecoin",
+   "created_at": "2026-10-21T14:33:50.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 280,
+   "author_created_at": "2026-06-15T10:25:09.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi Cool stuff, keep us posted! 🙏",
+   "author_handle": "casnenowetusa",
+   "created_at": "2026-10-21T14:33:50.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 0,
+   "author_created_at": "2026-10-18T08:07:28.000Z"
+  },
+  {
+   "text": "@inwrld_ @GigaLegendsLTD @gigaverse I can see u caught Dem early",
+   "author_handle": "iam_bigten",
+   "created_at": "2026-10-21T14:32:42.000Z",
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "author_followers": 355,
+   "author_created_at": "2025-11-04T11:23:03.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Totinho @ascendantsgames @GigaLegendsLTD @forevercultfund @PlayJadebound @itsnot_demarco @PlayEverMagic @VaultStreet_rh @IThinkItsArt @zerufinance @boinkverse @conso_xyz @bakeruip Noted thanks for sharing",
+   "author_handle": "alamin202075",
+   "created_at": "2026-10-21T14:30:24.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 2437,
+   "author_created_at": "2024-06-03T11:00:17.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@akagami58 @GigaLegendsLTD @0xDith glhfers team always cooks, locked in",
+   "author_handle": "0xkyliekim",
+   "created_at": "2026-10-21T14:29:06.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 16090,
+   "author_created_at": "2016-12-03T12:36:13.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@GigaLegendsLTD 2049. The hallway is the real venue.",
+   "author_handle": "kaionchain_",
+   "created_at": "2026-10-21T14:27:37.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 4118,
+   "author_created_at": "2024-07-24T10:35:45.000Z"
+  },
+  {
+   "text": "@akagami58 @GigaLegendsLTD @0xDith Seated, thanks for dropping",
+   "author_handle": "imAbdulazeez0p",
+   "created_at": "2026-10-21T14:27:19.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1536,
+   "author_created_at": "2024-03-28T14:52:36.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi Lets go",
+   "author_handle": "Clubs4Art",
+   "created_at": "2026-10-21T14:26:44.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 955,
+   "author_created_at": "2023-02-18T11:20:20.000Z"
+  },
+  {
+   "text": "@GigaLegendsLTD https://t.co/rZ13tMYtIf",
+   "author_handle": "DrizzWeb3",
+   "created_at": "2026-10-21T14:25:19.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 2790,
+   "author_created_at": "2023-01-26T22:10:30.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@akagami58 @GigaLegendsLTD @0xDith Thank you for sharing Alpha, I'll keep an eye on it.",
+   "author_handle": "jamie1000x",
+   "created_at": "2026-10-21T14:24:51.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 9413,
+   "author_created_at": "2024-09-11T11:07:26.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@GigaLegendsLTD Something is cooking init???",
+   "author_handle": "elimoni200",
+   "created_at": "2026-10-21T14:24:20.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 5839,
+   "author_created_at": "2024-03-21T23:48:42.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Tma_420 @GigaLegendsLTD @0xDith You can check @sickmindguy too",
+   "author_handle": "Kimitonali",
+   "created_at": "2026-10-21T14:24:00.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 735,
+   "author_created_at": "2009-08-07T03:27:18.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@DiivaMira @GigaLegendsLTD @0xDith @gigaverse Okay\n\nThanks for sharing",
+   "author_handle": "finelady_p",
+   "created_at": "2026-10-21T14:23:54.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 11123,
+   "author_created_at": "2021-11-11T21:31:38.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@weirdcats_nft @conso_xyz @GigaLegendsLTD @FungoLabs @IThinkItsArt @Embervale_ @VaultStreet_rh @minehood_rh @farmingseasonio @TopFloorFun @brixes_xyz @overload_xyz @RYFTCORP @bakeruip https://t.co/hv2dE2DpIA",
+   "author_handle": "heymhk",
+   "created_at": "2026-10-21T14:23:25.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1249,
+   "author_created_at": "2023-04-03T22:44:20.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@GigaLegendsLTD Goosebumps time \nreal need of my community",
+   "author_handle": "Jia_Lilly01",
+   "created_at": "2026-10-21T14:23:22.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 61009,
+   "author_created_at": "2014-01-09T12:36:31.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "Yesterday wen I posted about @GigaLegendsLTD they were at 1k+ with 0 of my mutual following them but today they're at 4k+ with 30 of my mutuals following them, this is insane motion.\n\nSpeaking of motion this will be the third collection on @gigaverse with the first trading above https://t.co/7AaqOthfza https://t.co/5evJxrtO5g",
+   "author_handle": "inwrld_",
+   "created_at": "2026-10-21T14:22:27.000Z",
+   "likes": 3,
+   "replies": 1,
+   "reposts": 0,
+   "author_followers": 810,
+   "author_created_at": "2024-11-14T15:22:10.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@akagami58 @GigaLegendsLTD @0xDith early alpha hunters",
+   "author_handle": "Dany_Crypto1",
+   "created_at": "2026-10-21T14:21:58.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 37836,
+   "author_created_at": "2018-07-08T10:29:12.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@akagami58 @GigaLegendsLTD @0xDith TBA always means diluted later",
+   "author_handle": "Davidgmi_01",
+   "created_at": "2026-10-21T14:21:52.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 35688,
+   "author_created_at": "2011-08-27T15:02:19.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi Good alphas",
+   "author_handle": "_Hazanah_",
+   "created_at": "2026-10-21T14:21:41.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 2025,
+   "author_created_at": "2024-04-06T13:44:59.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@GpaAndy @GigaLegendsLTD @gigaverse @0xDith @0xgarnish @ProofOfEly comrades are ready for this drop",
+   "author_handle": "MasteriasTrades",
+   "created_at": "2026-10-21T14:21:28.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 989,
+   "author_created_at": "2026-05-05T19:25:16.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@akagami58 @GigaLegendsLTD @0xDith sounds intriguing looking forward to updates",
+   "author_handle": "endlessq1",
+   "created_at": "2026-10-21T14:21:11.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 18562,
+   "author_created_at": "2019-06-01T17:39:10.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@ToxiC5501 @YieldFields_RH @GigaLegendsLTD @playcambria @Moku_HQ Let me know if you have any questions or need a tour!",
+   "author_handle": "NotABot",
+   "created_at": "2026-10-21T14:19:53.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 433,
+   "author_created_at": "2022-05-16T05:15:14.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi Looks solid",
+   "author_handle": "PascalBMS",
+   "created_at": "2026-10-21T14:19:13.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 794,
+   "author_created_at": "2025-01-21T03:36:31.000Z"
+  },
+  {
+   "text": "@aphkenneth @gigaverse @GigaLegendsLTD @0xDith Nice to post about their next launch hehe.",
+   "author_handle": "0xhaseebkhan",
+   "created_at": "2026-10-21T14:19:13.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 4237,
+   "author_created_at": "2016-03-16T07:42:43.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi Solid list",
+   "author_handle": "PietrzykMeli",
+   "created_at": "2026-10-21T14:18:44.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 171,
+   "author_created_at": "2022-06-09T01:41:34.000Z"
+  },
+  {
+   "text": "@heymhk @conso_xyz @GigaLegendsLTD @FungoLabs @IThinkItsArt @Embervale_ @VaultStreet_rh @minehood_rh @farmingseasonio @TopFloorFun @brixes_xyz @overload_xyz @RYFTCORP @bakeruip https://t.co/jVqoOJcFk5",
+   "author_handle": "weirdcats_nft",
+   "created_at": "2026-10-21T14:17:46.000Z",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "author_followers": 4009,
+   "author_created_at": "2026-09-07T12:47:14.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@weirdcats_nft @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi Wen collab? Wen approve Free Minttt? https://t.co/HGrPVM0kLD",
+   "author_handle": "WayneL_",
+   "created_at": "2026-10-21T14:17:06.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 30259,
+   "author_created_at": "2022-01-06T08:07:10.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi gud list",
+   "author_handle": "mokavi24",
+   "created_at": "2026-10-21T14:16:31.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 426,
+   "author_created_at": "2025-08-23T08:39:13.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi WEIRDOS MENTIONED! 👀🔥 https://t.co/7OfEHNW0kv",
+   "author_handle": "weirdcats_nft",
+   "created_at": "2026-10-21T14:16:30.000Z",
+   "likes": 4,
+   "replies": 1,
+   "reposts": 0,
+   "author_followers": 4009,
+   "author_created_at": "2026-09-07T12:47:14.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi Nogas on sui",
+   "author_handle": "memilo_sui",
+   "created_at": "2026-10-21T14:16:28.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 147,
+   "author_created_at": "2022-05-27T12:32:00.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi Fantastic! 👌",
+   "author_handle": "GertieCantw0lq",
+   "created_at": "2026-10-21T14:16:12.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 0,
+   "author_created_at": "2026-10-16T03:16:48.000Z"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi Giga Legends are the most hyped and most anticipated ones here",
+   "author_handle": "grejk_24",
+   "created_at": "2026-10-21T14:16:06.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1047,
+   "author_created_at": "2021-09-03T18:40:32.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@0xDith @ProofOfEly @GigaLegendsLTD thank god \ni got wl already",
+   "author_handle": "intelligency_",
+   "created_at": "2026-10-21T14:15:53.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1348,
+   "author_created_at": "2023-01-09T21:34:13.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@akagami58 @GigaLegendsLTD @0xDith It's huge cook",
+   "author_handle": "nftchains",
+   "created_at": "2026-10-21T14:15:13.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 11505,
+   "author_created_at": "2019-09-21T18:45:53.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@GigaLegendsLTD wl?",
+   "author_handle": "leaf_swan",
+   "created_at": "2026-10-21T14:12:51.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 64202,
+   "author_created_at": "2021-03-01T09:16:31.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@GigaLegendsLTD 👀",
+   "author_handle": "Baboola70",
+   "created_at": "2026-10-21T14:11:40.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 56,
+   "author_created_at": "2025-12-20T23:15:36.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi keep eye",
+   "author_handle": "gaofei52100",
+   "created_at": "2026-10-21T14:11:01.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 16077,
+   "author_created_at": "2021-12-18T01:13:32.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@akagami58 @GigaLegendsLTD @0xDith glhfers team plus gigaverse is enough reason to watch this one before anything else drops",
+   "author_handle": "biddaddy_lc",
+   "created_at": "2026-10-21T14:10:57.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 55708,
+   "author_created_at": "2021-03-27T07:18:44.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi do now  do now!!!",
+   "author_handle": "Jake222969",
+   "created_at": "2026-10-21T14:10:08.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 663,
+   "author_created_at": "2025-09-20T18:24:18.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Aphation_ @GigaLegendsLTD Sir how to get wl spot for this legendary collection 🥳🥳",
+   "author_handle": "f_dipto",
+   "created_at": "2026-10-21T14:09:48.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 952,
+   "author_created_at": "2023-06-15T08:28:32.000Z"
+  },
+  {
+   "text": "@Totinho @ascendantsgames @GigaLegendsLTD @forevercultfund @PlayJadebound @itsnot_demarco @PlayEverMagic @VaultStreet_rh @IThinkItsArt @zerufinance @boinkverse @conso_xyz @bakeruip Ascendants could be a game changer for sure",
+   "author_handle": "axe123111",
+   "created_at": "2026-10-21T14:09:25.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 6931,
+   "author_created_at": "2024-02-08T06:59:06.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi Thank you for this list.",
+   "author_handle": "danish_eth",
+   "created_at": "2026-10-21T14:07:57.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 306,
+   "author_created_at": "2022-09-09T21:25:10.000Z"
+  },
+  {
+   "text": "@GigaLegendsLTD 👀",
+   "author_handle": "mok4vi",
+   "created_at": "2026-10-21T14:07:51.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 4544,
+   "author_created_at": "2024-06-11T21:02:02.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi thanks for the alpha sir",
+   "author_handle": "xboxjeaneh567",
+   "created_at": "2026-10-21T14:07:37.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1939,
+   "author_created_at": "2022-03-26T06:32:56.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Korbee_CNX @ToxiC5501 @YieldFields_RH @GigaLegendsLTD @playcambria @Moku_HQ We are here 🫡",
+   "author_handle": "incryptofficial",
+   "created_at": "2026-10-21T14:07:16.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 1,
+   "author_followers": 880,
+   "author_created_at": "2024-07-06T14:31:37.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@WayneL_ @GigaLegendsLTD @0xDith @kalosfun @FugakuX @Nogasonsui @saksidasaksi LFG",
+   "author_handle": "emmanueloche151",
+   "created_at": "2026-10-21T14:05:55.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 78,
+   "author_created_at": "2024-06-01T14:58:44.000Z"
+  }
+ ],
+ "mention_counts": [
+  {
+   "start": "2026-10-14T14:59:45.000Z",
+   "end": "2026-10-15T00:00:00.000Z",
+   "tweet_count": 0
+  },
+  {
+   "start": "2026-10-15T00:00:00.000Z",
+   "end": "2026-10-16T00:00:00.000Z",
+   "tweet_count": 0
+  },
+  {
+   "start": "2026-10-16T00:00:00.000Z",
+   "end": "2026-10-17T00:00:00.000Z",
+   "tweet_count": 0
+  },
+  {
+   "start": "2026-10-17T00:00:00.000Z",
+   "end": "2026-10-18T00:00:00.000Z",
+   "tweet_count": 0
+  },
+  {
+   "start": "2026-10-18T00:00:00.000Z",
+   "end": "2026-10-19T00:00:00.000Z",
+   "tweet_count": 0
+  },
+  {
+   "start": "2026-10-19T00:00:00.000Z",
+   "end": "2026-10-20T00:00:00.000Z",
+   "tweet_count": 236
+  },
+  {
+   "start": "2026-10-20T00:00:00.000Z",
+   "end": "2026-10-21T00:00:00.000Z",
+   "tweet_count": 3585
+  },
+  {
+   "start": "2026-10-21T00:00:00.000Z",
+   "end": "2026-10-21T14:59:45.000Z",
+   "tweet_count": 745
+  }
+ ]
+}

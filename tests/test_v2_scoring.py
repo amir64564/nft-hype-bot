@@ -11,6 +11,7 @@ from hypebot.scoring import (score, trend, c_engagement, c_community, c_influent
 from hypebot.db import Database, Snapshot, SnapshotRecalc
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+from tests._paths import ingest_path
 REAL = {"minehood": ("req1", "Minehood", "minehood_rh"), "brixes2": ("req2", "Brixes", "brixes_xyz"),
         "brixes": ("req2_full", "Brixes", "brixes_xyz"), "lildudes": ("req6", "LilDudes", "lildudes_"),
         "giga": ("req7", "GigaLegendsLTD", "GigaLegendsLTD"), "nuloraio": ("req8", "Nuloraio", "nuloraio"),
@@ -19,7 +20,7 @@ S = Settings(weights=load_weights(str(ROOT / "weights.json")))
 
 
 def payload(key):
-    return json.loads((ROOT / "x_ingest" / f"{REAL[key][0]}.json").read_text())
+    return json.loads(ingest_path(REAL[key][0]).read_text())
 
 
 def run(key, p=None, age_h=0.0, earlier=()):

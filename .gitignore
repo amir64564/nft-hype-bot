@@ -9,7 +9,7 @@ bot.log
 bot.log.*
 bot.pid
 bot.log.tailstart
-x_ingest/
+/x_ingest/
 export/
 *.bak-*
 .DS_Store

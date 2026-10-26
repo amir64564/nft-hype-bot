@@ -1,0 +1,371 @@
+{
+ "source": "grokbot-x-read",
+ "collected_at": "2026-10-22T09:44:39Z",
+ "account": {
+  "username": "LootPlanetsRH",
+  "name": "Loot Planets",
+  "followers": 442,
+  "following": 1,
+  "tweet_count": 13,
+  "listed": 2,
+  "created_at": "2026-09-22T08:39:00.000Z",
+  "verified": true,
+  "verified_type": "blue",
+  "description": "Build your fleet. Conquer Planets. Collect Loot. 🪐\n\nComing soon to Robinhood Chain 🚀",
+  "links": [
+   "http://lootplanets.com"
+  ]
+ },
+ "recent_posts": [
+  {
+   "id": "2112938828902330852",
+   "text": "Website is live! 🚀\n\nhttps://t.co/IIBMOd3Ibn https://t.co/Q0GO01TnQU",
+   "created_at": "2026-10-21T16:07:27.000Z",
+   "likes": 94,
+   "replies": 49,
+   "reposts": 8,
+   "quotes": 1,
+   "author_handle": "LootPlanetsRH",
+   "views": 5092
+  },
+  {
+   "id": "2111508868467708243",
+   "text": "Claim your own place in the galaxy\n\nMore details next week 🛰️ https://t.co/C3oZjwuTAB",
+   "created_at": "2026-10-17T17:25:18.000Z",
+   "likes": 87,
+   "replies": 35,
+   "reposts": 8,
+   "quotes": 4,
+   "author_handle": "LootPlanetsRH",
+   "views": 3184
+  },
+  {
+   "id": "2110854588278645238",
+   "text": "The galaxy awaits new explorers 🚀\n\nThe time to Loot Planets is coming 🪐 https://t.co/AtJfrKiLi0",
+   "created_at": "2026-10-15T22:05:26.000Z",
+   "likes": 62,
+   "replies": 18,
+   "reposts": 4,
+   "quotes": 3,
+   "author_handle": "LootPlanetsRH",
+   "views": 2927
+  },
+  {
+   "id": "2109590019820400736",
+   "text": "Conquer planets. Collect loot. Grow your wealth. (🚀,🪐) https://t.co/iCY43aEjng",
+   "created_at": "2026-10-12T10:20:29.000Z",
+   "likes": 105,
+   "replies": 44,
+   "reposts": 7,
+   "quotes": 2,
+   "author_handle": "LootPlanetsRH",
+   "views": 4677
+  }
+ ],
+ "mentions": [
+  {
+   "text": "@LootPlanetsRH okee",
+   "author_handle": "SaefulLuki12182",
+   "created_at": "2026-10-22T08:18:27.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 157,
+   "author_created_at": "2023-06-19T16:02:01.000Z"
+  },
+  {
+   "text": "@xzmugi @LootPlanetsRH Alpha 👀",
+   "author_handle": "gfon_wolf",
+   "created_at": "2026-10-22T06:53:02.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 4160,
+   "author_created_at": "2023-06-13T20:58:29.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@xzmugi @LootPlanetsRH Pumpppfuuunnnn",
+   "author_handle": "sennagqrf",
+   "created_at": "2026-10-22T05:03:17.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 0,
+   "author_created_at": "2026-10-21T06:15:52.000Z"
+  },
+  {
+   "text": "RT @xzmugi: Early Web3 game project - Launching on Robinhood Chain.\n\n- 414 Followers\n- 1 Smart follower\n\n@LootPlanetsRH is bringing a pixel…",
+   "author_handle": "jaichi00",
+   "created_at": "2026-10-22T04:15:37.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 4,
+   "author_followers": 150,
+   "author_created_at": "2022-11-02T12:25:52.000Z"
+  },
+  {
+   "text": "@xzmugi @LootPlanetsRH lfg",
+   "author_handle": "jolli_vin",
+   "created_at": "2026-10-22T04:12:54.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 73,
+   "author_created_at": "2023-08-03T09:01:36.000Z"
+  },
+  {
+   "text": "@LootPlanetsRH 👀",
+   "author_handle": "jolli_vin",
+   "created_at": "2026-10-22T04:10:31.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 73,
+   "author_created_at": "2023-08-03T09:01:36.000Z"
+  },
+  {
+   "text": "RT @LootPlanetsRH: Conquer planets. Collect loot. Grow your wealth. (🚀,🪐) https://t.co/iCY43aEjng",
+   "author_handle": "jolli_vin",
+   "created_at": "2026-10-22T04:10:12.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 7,
+   "author_followers": 73,
+   "author_created_at": "2023-08-03T09:01:36.000Z"
+  },
+  {
+   "text": "RT @LootPlanetsRH: Website is live! 🚀\n\nhttps://t.co/IIBMOd3Ibn https://t.co/Q0GO01TnQU",
+   "author_handle": "jolli_vin",
+   "created_at": "2026-10-22T04:10:03.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 8,
+   "author_followers": 73,
+   "author_created_at": "2023-08-03T09:01:36.000Z"
+  },
+  {
+   "text": "@LootPlanetsRH keep cooking",
+   "author_handle": "jolli_vin",
+   "created_at": "2026-10-22T04:09:59.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 73,
+   "author_created_at": "2023-08-03T09:01:36.000Z"
+  },
+  {
+   "text": "@LootPlanetsRH locked and loaded 😆 https://t.co/pSAu6CIA5y",
+   "author_handle": "jolli_vin",
+   "created_at": "2026-10-22T04:09:44.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 73,
+   "author_created_at": "2023-08-03T09:01:36.000Z"
+  },
+  {
+   "text": "RT @xzmugi: Early Web3 game project - Launching on Robinhood Chain.\n\n- 414 Followers\n- 1 Smart follower\n\n@LootPlanetsRH is bringing a pixel…",
+   "author_handle": "M3owg33",
+   "created_at": "2026-10-22T04:07:51.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 4,
+   "author_followers": 63,
+   "author_created_at": "2025-08-26T23:01:11.000Z"
+  },
+  {
+   "text": "@xzmugi @LootPlanetsRH yown",
+   "author_handle": "M3owg33",
+   "created_at": "2026-10-22T04:07:48.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 63,
+   "author_created_at": "2025-08-26T23:01:11.000Z"
+  },
+  {
+   "text": "@xzmugi @LootPlanetsRH alpha",
+   "author_handle": "HyraxKusho",
+   "created_at": "2026-10-22T04:06:30.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1753,
+   "author_created_at": "2023-03-24T17:37:29.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "RT @xzmugi: Early Web3 game project - Launching on Robinhood Chain.\n\n- 414 Followers\n- 1 Smart follower\n\n@LootPlanetsRH is bringing a pixel…",
+   "author_handle": "HyraxKusho",
+   "created_at": "2026-10-22T04:06:27.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 4,
+   "author_followers": 1753,
+   "author_created_at": "2023-03-24T17:37:29.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@xzmugi @LootPlanetsRH interesting",
+   "author_handle": "Oxosaragi",
+   "created_at": "2026-10-22T04:06:15.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 212,
+   "author_created_at": "2024-03-01T15:41:31.000Z"
+  },
+  {
+   "text": "RT @xzmugi: Early Web3 game project - Launching on Robinhood Chain.\n\n- 414 Followers\n- 1 Smart follower\n\n@LootPlanetsRH is bringing a pixel…",
+   "author_handle": "Oxosaragi",
+   "created_at": "2026-10-22T04:06:11.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 4,
+   "author_followers": 212,
+   "author_created_at": "2024-03-01T15:41:31.000Z"
+  },
+  {
+   "text": "@xzmugi @LootPlanetsRH Thanks xzmugi\nGlad we’re early",
+   "author_handle": "fondnessweb3",
+   "created_at": "2026-10-22T04:03:35.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 2989,
+   "author_created_at": "2025-03-26T21:37:50.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "Early Web3 game project - Launching on Robinhood Chain.\n\n- 414 Followers\n- 1 Smart follower\n\n@LootPlanetsRH is bringing a pixel art space adventure to Robinhood where you build fleets, conquer planets and collect loot.\n\nThe interactive galaxy preview already looks fun. Curious to https://t.co/jELGLB25EU",
+   "author_handle": "xzmugi",
+   "created_at": "2026-10-22T04:02:57.000Z",
+   "likes": 12,
+   "replies": 7,
+   "reposts": 4,
+   "author_followers": 3447,
+   "author_created_at": "2023-10-18T07:24:49.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@LootPlanetsRH $Space https://t.co/65Iriqj4fB",
+   "author_handle": "usespacefun",
+   "created_at": "2026-10-22T03:43:49.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 142,
+   "author_created_at": "2026-09-20T01:02:43.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@LootPlanetsRH 📥 DM me 💬 &amp; let's work together 🤝 to take it to the moon! 🚀🌕✨",
+   "author_handle": "PumpGurureal1",
+   "created_at": "2026-10-22T02:58:14.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 48984,
+   "author_created_at": "2019-10-24T05:10:37.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@LootPlanetsRH Got something you need help with? Message me anytime, completely free.",
+   "author_handle": "DylanCrypto77",
+   "created_at": "2026-10-22T01:48:22.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 58096,
+   "author_created_at": "2022-05-25T18:41:02.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "RT @LootPlanetsRH: Website is live! 🚀\n\nhttps://t.co/IIBMOd3Ibn https://t.co/Q0GO01TnQU",
+   "author_handle": "Cannabisking42",
+   "created_at": "2026-10-22T00:10:43.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 8,
+   "author_followers": 3584,
+   "author_created_at": "2023-03-26T18:30:23.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@LootPlanetsRH Spent way too long launching rockets off the planets 😄 the galaxy page has real character. Will the game's main map feel like this too?",
+   "author_handle": "Batcryptix",
+   "created_at": "2026-10-21T23:45:31.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1618,
+   "author_created_at": "2024-11-06T10:05:16.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@LootPlanetsRH I’m always happy to help out for free. Just reach out whenever you need..",
+   "author_handle": "0xMephis",
+   "created_at": "2026-10-21T23:08:16.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 41820,
+   "author_created_at": "2021-04-04T11:21:03.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@LootPlanetsRH Hey! Check DM!🔥📈",
+   "author_handle": "NickyBuffett",
+   "created_at": "2026-10-21T22:37:54.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1004533,
+   "author_created_at": "2021-08-07T12:25:39.000Z",
+   "author_verified_type": "blue"
+  }
+ ],
+ "mention_counts": [
+  {
+   "start": "2026-10-15T09:44:15.000Z",
+   "end": "2026-10-16T00:00:00.000Z",
+   "tweet_count": 0
+  },
+  {
+   "start": "2026-10-16T00:00:00.000Z",
+   "end": "2026-10-17T00:00:00.000Z",
+   "tweet_count": 43
+  },
+  {
+   "start": "2026-10-17T00:00:00.000Z",
+   "end": "2026-10-18T00:00:00.000Z",
+   "tweet_count": 37
+  },
+  {
+   "start": "2026-10-18T00:00:00.000Z",
+   "end": "2026-10-19T00:00:00.000Z",
+   "tweet_count": 12
+  },
+  {
+   "start": "2026-10-19T00:00:00.000Z",
+   "end": "2026-10-20T00:00:00.000Z",
+   "tweet_count": 2
+  },
+  {
+   "start": "2026-10-20T00:00:00.000Z",
+   "end": "2026-10-21T00:00:00.000Z",
+   "tweet_count": 0
+  },
+  {
+   "start": "2026-10-21T00:00:00.000Z",
+   "end": "2026-10-22T00:00:00.000Z",
+   "tweet_count": 63
+  },
+  {
+   "start": "2026-10-22T00:00:00.000Z",
+   "end": "2026-10-22T09:44:15.000Z",
+   "tweet_count": 22
+  }
+ ]
+}

@@ -1,0 +1,944 @@
+{
+ "source": "grokbot-x-read",
+ "collected_at": "2026-10-21T15:01:27.000Z",
+ "account": {
+  "username": "nuloraio",
+  "name": "NULORA",
+  "followers": 4346,
+  "following": 1,
+  "tweet_count": 12,
+  "listed": 8,
+  "created_at": "2026-10-02T11:55:10.000Z",
+  "verified": true,
+  "verified_type": "blue",
+  "description": "Genesis NFT & Launchpad of @monero\n\nBuilt for the next wave of digital culture",
+  "links": [
+   "http://nulora.io"
+  ]
+ },
+ "recent_posts": [
+  {
+   "id": "2112290621818085793",
+   "text": "Nulero = Monero\n\nNFTs worth collecting. Privacy worth protecting.",
+   "created_at": "2026-10-19T21:11:43.000Z",
+   "likes": 98,
+   "replies": 27,
+   "reposts": 13,
+   "quotes": 1,
+   "author_handle": "nuloraio",
+   "views": 2341
+  },
+  {
+   "id": "2110686367172923464",
+   "text": "🔸2500 🔸",
+   "created_at": "2026-10-15T10:56:59.000Z",
+   "likes": 123,
+   "replies": 44,
+   "reposts": 5,
+   "quotes": 0,
+   "author_handle": "nuloraio",
+   "views": 4087
+  },
+  {
+   "id": "2110305454551101736",
+   "text": "Monero’s first NFT collection. \n\nNULORA Genesis. History starts here.",
+   "created_at": "2026-10-14T09:43:22.000Z",
+   "likes": 144,
+   "replies": 54,
+   "reposts": 11,
+   "quotes": 1,
+   "author_handle": "nuloraio",
+   "views": 5100
+  },
+  {
+   "id": "2110065565222027526",
+   "text": "Enter the shadows. Claim your Genesis. \n\nCreate your Monero wallet. Submit your address. \n\nJoin the NULORA waitlist: \n- https://t.co/NCqf0xJJXN\n\n🔸🔸🔸 https://t.co/jwDGPszWU1",
+   "created_at": "2026-10-13T17:50:08.000Z",
+   "likes": 3087,
+   "replies": 2802,
+   "reposts": 2485,
+   "quotes": 3870,
+   "author_handle": "nuloraio",
+   "views": 107622
+  },
+  {
+   "id": "2109373096478244868",
+   "text": "Get ready to enter true privacy. \n\nNULORA is coming.",
+   "created_at": "2026-10-11T19:58:31.000Z",
+   "likes": 62,
+   "replies": 0,
+   "reposts": 4,
+   "quotes": 5,
+   "author_handle": "nuloraio",
+   "views": 4316
+  },
+  {
+   "id": "2108293009863557388",
+   "text": "Genesis comes before everything else.",
+   "created_at": "2026-10-08T20:26:38.000Z",
+   "likes": 45,
+   "replies": 16,
+   "reposts": 2,
+   "quotes": 2,
+   "author_handle": "nuloraio",
+   "views": 4110
+  },
+  {
+   "id": "2106777770005057572",
+   "text": "NULORA Genesis (FREE MINT)\n\nThe first collection of the NULORA Launchpad\n\nPowered by monero:native \n\nRepost + comment with your Monero wallets https://t.co/sT5HFNCMjG",
+   "created_at": "2026-10-04T16:05:37.000Z",
+   "likes": 370,
+   "replies": 450,
+   "reposts": 335,
+   "quotes": 15,
+   "author_handle": "nuloraio",
+   "views": 6811
+  },
+  {
+   "id": "2106694391993864533",
+   "text": "True privacy begins with monero:native",
+   "created_at": "2026-10-04T10:34:18.000Z",
+   "likes": 48,
+   "replies": 11,
+   "reposts": 4,
+   "quotes": 0,
+   "author_handle": "nuloraio",
+   "views": 1964
+  }
+ ],
+ "mentions": [
+  {
+   "text": "@GamaBois @nuloraio @builderzcore It’s my duty",
+   "author_handle": "Officialhenry04",
+   "created_at": "2026-10-21T15:01:04.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 698,
+   "author_created_at": "2022-03-20T21:03:59.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Officialhenry04 @nuloraio Thanks for spots in @builderzcore",
+   "author_handle": "GamaBois",
+   "created_at": "2026-10-21T15:00:33.000Z",
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "author_followers": 753,
+   "author_created_at": "2024-12-31T14:16:03.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@Officialhenry04 @nuloraio 🔥🏆 this community is special!!",
+   "author_handle": "LingammalAmy",
+   "created_at": "2026-10-21T15:00:19.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 0,
+   "author_created_at": "2026-10-16T03:16:39.000Z"
+  },
+  {
+   "text": "@nuloraio Im in",
+   "author_handle": "larhlarhhh",
+   "created_at": "2026-10-21T14:59:44.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1436,
+   "author_created_at": "2020-07-05T17:30:33.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio Interesting",
+   "author_handle": "Mhize12",
+   "created_at": "2026-10-21T14:59:02.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1358,
+   "author_created_at": "2022-10-14T06:14:05.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@CloudquestASIA @nuloraio first nft in monero",
+   "author_handle": "AirdropCatNinja",
+   "created_at": "2026-10-21T14:58:49.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 21,
+   "author_created_at": "2023-06-13T17:34:20.000Z"
+  },
+  {
+   "text": "@nuloraio Sent a dm",
+   "author_handle": "dayothev1",
+   "created_at": "2026-10-21T14:56:44.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 12614,
+   "author_created_at": "2022-03-01T19:37:26.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@CloudquestASIA @nuloraio Done",
+   "author_handle": "larhlarhhh",
+   "created_at": "2026-10-21T14:54:37.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1436,
+   "author_created_at": "2020-07-05T17:30:33.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@olamidetoa @nuloraio Privacy meets NFTs on Monero — interesting angle. Watching how Genesis plays out.",
+   "author_handle": "Samueldaodu22",
+   "created_at": "2026-10-21T14:53:49.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 2988,
+   "author_created_at": "2022-02-16T16:30:39.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@lenzendoo @nuloraio 46XUD2M8VKQTzogbPzrxLJ4RCrTH7yktDZYPQHkM2FYfZhZ3hHMke4w4M17z8hpAUpXNozHT3v2t9CfmmHmNMSYdVVXTdy4",
+   "author_handle": "Efos_b",
+   "created_at": "2026-10-21T14:51:56.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 817,
+   "author_created_at": "2023-10-10T10:39:01.000Z"
+  },
+  {
+   "text": "@lenzendoo @nuloraio 43hH5bVdEje8pzKQTYAwJGLKgp278caeJYhKQgxZqrfa7pSzsoZttcXJuytnNeHfccQ7MTzsJmKisVj9dYdratRLJtx11Zn",
+   "author_handle": "ogun49219",
+   "created_at": "2026-10-21T14:51:04.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 266,
+   "author_created_at": "2025-05-25T22:20:35.000Z"
+  },
+  {
+   "text": "@nuloraio Entering",
+   "author_handle": "lordrick69",
+   "created_at": "2026-10-21T14:49:56.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 14,
+   "author_created_at": "2025-11-21T18:21:17.000Z"
+  },
+  {
+   "text": "@CloudquestASIA @nuloraio first NFT to monero?",
+   "author_handle": "MrFogXX",
+   "created_at": "2026-10-21T14:47:55.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 5437,
+   "author_created_at": "2021-05-12T00:44:46.000Z"
+  },
+  {
+   "text": "@CloudquestASIA @nuloraio good project",
+   "author_handle": "_largoroyal",
+   "created_at": "2026-10-21T14:47:31.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1592,
+   "author_created_at": "2022-08-11T19:28:03.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio There.",
+   "author_handle": "gboliSzn",
+   "created_at": "2026-10-21T14:46:32.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1936,
+   "author_created_at": "2022-02-16T12:41:33.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio monero wallet ready, drop the link let us in",
+   "author_handle": "MrFogXX",
+   "created_at": "2026-10-21T14:45:50.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 5437,
+   "author_created_at": "2021-05-12T00:44:46.000Z"
+  },
+  {
+   "text": "@Officialhenry04 @nuloraio Ggs 🤝🏼",
+   "author_handle": "Escanor0X0",
+   "created_at": "2026-10-21T14:45:04.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 427,
+   "author_created_at": "2026-05-05T06:52:54.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio Seemless",
+   "author_handle": "_kwalski",
+   "created_at": "2026-10-21T14:44:37.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 13,
+   "author_created_at": "2021-11-11T10:38:27.000Z"
+  },
+  {
+   "text": "@madamayo_ @nuloraio Wonderful 😊 \nthanks for sharing, ma'am ❤️",
+   "author_handle": "TrinyDefi",
+   "created_at": "2026-10-21T14:42:46.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 988,
+   "author_created_at": "2023-09-15T03:39:20.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio I'm all in",
+   "author_handle": "0xRayy1",
+   "created_at": "2026-10-21T14:42:37.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 932,
+   "author_created_at": "2025-03-30T09:55:05.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "Genesis nft &amp; launchpad of monero ecosystem \n\nfree mint &amp; 2500 supply \n\nbuilt for the next wave of digital culture \n\nThanks @nuloraio for allocating my communities https://t.co/MrdrAEfEGq",
+   "author_handle": "Officialhenry04",
+   "created_at": "2026-10-21T14:40:45.000Z",
+   "likes": 3,
+   "replies": 3,
+   "reposts": 0,
+   "author_followers": 698,
+   "author_created_at": "2022-03-20T21:03:59.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio Just join",
+   "author_handle": "jisepti31",
+   "created_at": "2026-10-21T14:39:42.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 365,
+   "author_created_at": "2026-05-21T11:31:04.000Z"
+  },
+  {
+   "text": "GTD spots for @nuloraio up for grabs\n\nFirst NFT Collection on Monero\nMint Price: Free\nSupply: 2500\n\nTo enter: \n-follow @nuloraio \n-like and retweet this post\n-create wallet here: https://t.co/ZWZuh0zkmT -drop the wallet in the comment👇\n\nPicking winners in 48hrs https://t.co/SrbD4G8Qlo",
+   "author_handle": "lenzendoo",
+   "created_at": "2026-10-21T14:37:30.000Z",
+   "likes": 4,
+   "replies": 2,
+   "reposts": 3,
+   "author_followers": 2415,
+   "author_created_at": "2024-02-19T16:27:19.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio Bullish on this",
+   "author_handle": "MitchFx_1",
+   "created_at": "2026-10-21T14:37:14.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1029,
+   "author_created_at": "2024-01-16T12:52:14.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@madamayo_ @nuloraio alright ma",
+   "author_handle": "0xRayy1",
+   "created_at": "2026-10-21T14:36:59.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 932,
+   "author_created_at": "2025-03-30T09:55:05.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio Done ☑️",
+   "author_handle": "amirkmd1",
+   "created_at": "2026-10-21T14:36:09.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1808,
+   "author_created_at": "2019-08-18T14:10:22.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio 👀",
+   "author_handle": "Defi_butter_fly",
+   "created_at": "2026-10-21T14:36:01.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1066,
+   "author_created_at": "2025-06-04T21:19:32.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "NULORA is bringing a fresh wave of innovation to the Monero ecosystem with digital collectibles and its Genesis launch. 🔥\n\nIt's a free mint btw...\n\nEarly opportunities are worth watching, and NULORA has my attention. The journey is just getting started! 🚀🖤\n\n@nuloraio https://t.co/yB1ixBOLBH",
+   "author_handle": "MitchFx_1",
+   "created_at": "2026-10-21T14:35:17.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1029,
+   "author_created_at": "2024-01-16T12:52:14.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@CloudquestASIA @nuloraio lfg",
+   "author_handle": "bashadrian",
+   "created_at": "2026-10-21T14:33:17.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 55,
+   "author_created_at": "2013-04-30T07:35:22.000Z"
+  },
+  {
+   "text": "NFTs and digital culture are finally coming to Monero ($XMR)! 🔒💎\n\n@nuloraio is launching the first-ever launchpad for sovereign digital collectibles built directly around Monero's native privacy rails.\n\nWhy you shouldn't fade this:\n🔹 True privacy meets onchain digital culture https://t.co/prfp337U5I",
+   "author_handle": "lucky_Beamer",
+   "created_at": "2026-10-21T14:32:24.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 597,
+   "author_created_at": "2012-11-26T16:46:50.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio Yes For mutation",
+   "author_handle": "sarebanx33",
+   "created_at": "2026-10-21T14:31:18.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 3838,
+   "author_created_at": "2021-11-19T19:07:11.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio wants wl",
+   "author_handle": "mon_nhien",
+   "created_at": "2026-10-21T14:30:51.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 26,
+   "author_created_at": "2022-11-03T05:44:04.000Z"
+  },
+  {
+   "text": "Digital culture meets financial privacy! 🔒🎨\n\nBringing digital collectibles and a native launchpad directly to Monero ($XMR) is a massive narrative shift. Excited to be part of the Genesis wave with @nuloraio! \n\nDiscover NULORA: digital collectibles on Monero. https://t.co/twIkGgrLxH",
+   "author_handle": "lucky_Beamer",
+   "created_at": "2026-10-21T14:28:58.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 597,
+   "author_created_at": "2012-11-26T16:46:50.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@olamidetoa @nuloraio This gonna be interesting",
+   "author_handle": "SmithTimothy19",
+   "created_at": "2026-10-21T14:28:11.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1911,
+   "author_created_at": "2019-10-29T22:48:09.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "Bringing digital collectibles natively to Monero is one of the most exciting narratives right now! 🔒🎨\n\nPrivacy has always been the missing layer in the NFT space. What @nuloraio is building—a dedicated launchpad and home for digital collectibles on Monero—finally bridges true",
+   "author_handle": "lucky_Beamer",
+   "created_at": "2026-10-21T14:26:33.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 597,
+   "author_created_at": "2012-11-26T16:46:50.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio first thing",
+   "author_handle": "Anhvan911",
+   "created_at": "2026-10-21T14:24:12.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 151,
+   "author_created_at": "2021-12-03T03:42:59.000Z"
+  },
+  {
+   "text": "What interests me about NULORA is the potential behind what the project is building. In Web3, I believe long-term value comes from real utility, transparency, and a community that grows. I’ll be watching how NULORA develops and delivers on its vision. 🚀\n@nuloraio",
+   "author_handle": "Ola_Psalmson007",
+   "created_at": "2026-10-21T14:23:53.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 32,
+   "author_created_at": "2022-06-21T09:12:02.000Z"
+  },
+  {
+   "text": "@nuloraio Enter the shadows",
+   "author_handle": "nhPhan22979456",
+   "created_at": "2026-10-21T14:19:16.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 434,
+   "author_created_at": "2021-05-15T23:39:53.000Z"
+  },
+  {
+   "text": "@Big_DeFigirl24 @olamidetoa @nuloraio Yours us very good \n\nI like it",
+   "author_handle": "AbbeyBiodu74341",
+   "created_at": "2026-10-21T14:17:58.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 32,
+   "author_created_at": "2025-07-27T10:42:42.000Z"
+  },
+  {
+   "text": "@nuloraio just let me in fam",
+   "author_handle": "PhiTran35008856",
+   "created_at": "2026-10-21T14:13:13.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 3564,
+   "author_created_at": "2022-05-15T00:00:52.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@wilson_ @nuloraio Done \n\n44si6cdUUuG8RsdLckWAZ8DySkYHpxof7989W9VGu3jvU3Sb1grAoAab371QybgcfS9Se7W6Lkuy4BQL9wttY5MNQkSiC5p",
+   "author_handle": "Michael01407407",
+   "created_at": "2026-10-21T14:13:04.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 272,
+   "author_created_at": "2022-09-12T19:18:15.000Z"
+  },
+  {
+   "text": "@olamidetoa @nuloraio I wanna get in",
+   "author_handle": "pricelessxphj",
+   "created_at": "2026-10-21T14:10:24.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 235,
+   "author_created_at": "2026-05-11T21:03:02.000Z"
+  },
+  {
+   "text": "Another free mint to keep an eye on 👀\n\n@nuloraio is building a native launchpad for @monero.\n\nGenesis NFT details: • Supply: 2,500 NFTs • Mint: Free\nCreate a wallet, submit your address, complete the tasks and join the waitlist. https://t.co/OJ0WyVaRyh",
+   "author_handle": "TusharHQ",
+   "created_at": "2026-10-21T14:09:49.000Z",
+   "likes": 0,
+   "replies": 1,
+   "reposts": 0,
+   "author_followers": 1673,
+   "author_created_at": "2020-11-25T08:06:58.000Z"
+  },
+  {
+   "text": "@nuloraio 🙌",
+   "author_handle": "Michael01407407",
+   "created_at": "2026-10-21T14:07:41.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 272,
+   "author_created_at": "2022-09-12T19:18:15.000Z"
+  },
+  {
+   "text": "@thatUncleRuckus @olamidetoa @nuloraio Co ask",
+   "author_handle": "Gulaataa",
+   "created_at": "2026-10-21T14:07:16.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 220,
+   "author_created_at": "2024-07-16T01:37:09.000Z"
+  },
+  {
+   "text": "@olamidetoa @nuloraio Ola how do I get in",
+   "author_handle": "Gulaataa",
+   "created_at": "2026-10-21T14:07:02.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 220,
+   "author_created_at": "2024-07-16T01:37:09.000Z"
+  },
+  {
+   "text": "@wilson_ @nuloraio 49KBYs8wpNwGvUNp1y3SZP5AVW5dZqHuLEgFjxtyZVRB7HAyRrheWWed4oJ9oC7GNMfTYpa4eBmoyH2s5uRDSiowHErqxPd",
+   "author_handle": "Bigraj_2007",
+   "created_at": "2026-10-21T14:07:01.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 510,
+   "author_created_at": "2024-12-26T07:28:40.000Z"
+  },
+  {
+   "text": "@olamidetoa @nuloraio Have an idea how to get in ?",
+   "author_handle": "thatUncleRuckus",
+   "created_at": "2026-10-21T14:05:52.000Z",
+   "likes": 1,
+   "replies": 1,
+   "reposts": 0,
+   "author_followers": 56,
+   "author_created_at": "2019-03-31T20:40:40.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio Probably nothing",
+   "author_handle": "Bigraj_2007",
+   "created_at": "2026-10-21T14:05:23.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 510,
+   "author_created_at": "2024-12-26T07:28:40.000Z"
+  },
+  {
+   "text": "@olamidetoa @nuloraio This is amazing 👏",
+   "author_handle": "Lolseyi",
+   "created_at": "2026-10-21T14:05:17.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1229,
+   "author_created_at": "2024-05-13T07:15:49.000Z"
+  },
+  {
+   "text": "@olamidetoa @nuloraio I honestly think attention will get here eventually",
+   "author_handle": "w3b3grey",
+   "created_at": "2026-10-21T14:05:09.000Z",
+   "likes": 2,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 2737,
+   "author_created_at": "2017-09-10T13:12:37.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio Monero wallet ready, LFG!",
+   "author_handle": "TusharHQ",
+   "created_at": "2026-10-21T14:04:33.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1673,
+   "author_created_at": "2020-11-25T08:06:58.000Z"
+  },
+  {
+   "text": "@olamidetoa @nuloraio This is Solid, Would love to be a part of it... Nulora is the Alpha 🔥",
+   "author_handle": "encryptedmomeh",
+   "created_at": "2026-10-21T14:04:15.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1069,
+   "author_created_at": "2023-09-28T08:43:32.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@ssheyii @nuloraio i will be there 🫡",
+   "author_handle": "Staceomi",
+   "created_at": "2026-10-21T14:03:23.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1712,
+   "author_created_at": "2022-10-11T07:28:15.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@olamidetoa @nuloraio I honestly like the approach NULORA is taking, something more different from others. \n\nThis is worth all my attention",
+   "author_handle": "Big_DeFigirl24",
+   "created_at": "2026-10-21T14:01:51.000Z",
+   "likes": 2,
+   "replies": 1,
+   "reposts": 0,
+   "author_followers": 1589,
+   "author_created_at": "2025-11-22T16:16:29.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@olamidetoa @nuloraio This is good 👍",
+   "author_handle": "Garvinjeet",
+   "created_at": "2026-10-21T14:00:37.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1720,
+   "author_created_at": "2023-04-29T07:28:13.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@olamidetoa @nuloraio Solid here",
+   "author_handle": "w3b3grey",
+   "created_at": "2026-10-21T13:59:49.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 2737,
+   "author_created_at": "2017-09-10T13:12:37.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@olamidetoa @nuloraio This is awesome 👏",
+   "author_handle": "Major_Garrison1",
+   "created_at": "2026-10-21T13:59:23.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1966,
+   "author_created_at": "2022-05-29T13:50:45.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@ssheyii @nuloraio Let’s go Dinero",
+   "author_handle": "sundii_vvs",
+   "created_at": "2026-10-21T13:59:08.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1057,
+   "author_created_at": "2022-06-02T19:52:00.000Z"
+  },
+  {
+   "text": "@nuloraio just created mine",
+   "author_handle": "Staceomi",
+   "created_at": "2026-10-21T13:49:19.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1712,
+   "author_created_at": "2022-10-11T07:28:15.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio lets have it",
+   "author_handle": "web3Binta",
+   "created_at": "2026-10-21T13:49:01.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 5969,
+   "author_created_at": "2023-06-03T10:59:46.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@madamayo_ @nuloraio Thanks for sharing ☺️",
+   "author_handle": "Just_explorerr",
+   "created_at": "2026-10-21T13:49:00.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1329,
+   "author_created_at": "2025-06-06T11:29:21.000Z"
+  },
+  {
+   "text": "@nuloraio Gas guys",
+   "author_handle": "Dischik1",
+   "created_at": "2026-10-21T13:48:59.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 20,
+   "author_created_at": "2024-07-23T16:22:00.000Z"
+  },
+  {
+   "text": "@ssheyii @nuloraio Waow",
+   "author_handle": "3bukaNFT",
+   "created_at": "2026-10-21T13:47:46.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 3202,
+   "author_created_at": "2023-07-09T13:21:04.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio This is super clean\nCount me in...\n\nSee Dm..",
+   "author_handle": "iike3837",
+   "created_at": "2026-10-21T13:45:28.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 4838,
+   "author_created_at": "2023-10-11T11:01:36.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@KartikBishwas1 @nuloraio 43gyQFbGFfzMUXqgsmhUEYLfWaarYAvf9hVkbFus7EbA7U1SjZbDcqr7jMS4dYPAVQP1S5jfTE3xcey5FfoyeCex2V7Hdsz",
+   "author_handle": "blezzury0147",
+   "created_at": "2026-10-21T13:45:03.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 256,
+   "author_created_at": "2025-01-05T20:25:56.000Z"
+  },
+  {
+   "text": "𝐌𝐨𝐧𝐞𝐫𝐨 𝐢𝐬 𝐤𝐧𝐨𝐰𝐧 𝐟𝐨𝐫 𝐩𝐫𝐢𝐯𝐚𝐜𝐲, 𝐛𝐮𝐭 𝐰𝐡𝐚𝐭 𝐡𝐚𝐩𝐩𝐞𝐧𝐬 𝐰𝐡𝐞𝐧 𝐍𝐅𝐓𝐬 𝐞𝐧𝐭𝐞𝐫 𝐭𝐡𝐞 𝐩𝐢𝐜𝐭𝐮𝐫𝐞?\n\nThat’s where @nuloraio comes in.\n\nNULORA is building what it describes as Monero’s 𝐟𝐢𝐫𝐬𝐭 𝐍𝐅𝐓 𝐜𝐨𝐥𝐥𝐞𝐜𝐭𝐢𝐨𝐧 and https://t.co/0OBacqXB9G",
+   "author_handle": "olamidetoa",
+   "created_at": "2026-10-21T13:45:00.000Z",
+   "likes": 17,
+   "replies": 12,
+   "reposts": 10,
+   "author_followers": 928,
+   "author_created_at": "2023-12-29T18:56:17.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio Applying for genesis nft",
+   "author_handle": "mypokman36812",
+   "created_at": "2026-10-21T13:43:59.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 524,
+   "author_created_at": "2024-11-04T10:41:37.000Z"
+  },
+  {
+   "text": "@rifat__dimple @nuloraio 0xE13d9cA9338511c9007f7e72895f485f727bca2A",
+   "author_handle": "NFT_Hamid",
+   "created_at": "2026-10-21T13:42:25.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 853,
+   "author_created_at": "2022-01-11T04:18:40.000Z"
+  },
+  {
+   "text": "@nuloraio know i Enter the shadows",
+   "author_handle": "tvkhaz",
+   "created_at": "2026-10-21T13:41:40.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 183,
+   "author_created_at": "2018-10-04T19:47:12.000Z"
+  },
+  {
+   "text": "@madamayo_ @nuloraio Thank You for this",
+   "author_handle": "Tesfayeofweb",
+   "created_at": "2026-10-21T13:40:06.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 3269,
+   "author_created_at": "2025-01-16T06:17:38.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@nuloraio Watching this grow feels organic and the development pace proves the team is serious about delivering something valuable for the long term future",
+   "author_handle": "nyamukluciole",
+   "created_at": "2026-10-21T13:40:03.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 140,
+   "author_created_at": "2011-10-31T14:28:04.000Z"
+  },
+  {
+   "text": "@madamayo_ @nuloraio We’re paying attention to em",
+   "author_handle": "Praisemetax",
+   "created_at": "2026-10-21T13:39:52.000Z",
+   "likes": 1,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 5267,
+   "author_created_at": "2023-05-22T14:59:20.000Z",
+   "author_verified_type": "blue"
+  },
+  {
+   "text": "@wilson_ @nuloraio LFG!\n0x5fD0b8250d640816BA60A4C07ecf16E723876a4b",
+   "author_handle": "Tommy_therealj",
+   "created_at": "2026-10-21T13:37:48.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 1913,
+   "author_created_at": "2023-07-29T04:26:56.000Z"
+  },
+  {
+   "text": "@wilson_ @nuloraio 48h118Ne2Pb97T7SK2byG1cViju9R13syfmpNHfHQrDXWvpeyJcjW72aX8941uiYiMde85x1SwyF9DdpRBxS7w4kTeGdQCa",
+   "author_handle": "gtofweb3",
+   "created_at": "2026-10-21T13:36:30.000Z",
+   "likes": 0,
+   "replies": 0,
+   "reposts": 0,
+   "author_followers": 3788,
+   "author_created_at": "2020-07-16T12:28:58.000Z",
+   "author_verified_type": "blue"
+  }
+ ],
+ "mention_counts": [
+  {
+   "start": "2026-10-14T15:01:27.000Z",
+   "end": "2026-10-15T00:00:00.000Z",
+   "tweet_count": 287
+  },
+  {
+   "start": "2026-10-15T00:00:00.000Z",
+   "end": "2026-10-16T00:00:00.000Z",
+   "tweet_count": 643
+  },
+  {
+   "start": "2026-10-16T00:00:00.000Z",
+   "end": "2026-10-17T00:00:00.000Z",
+   "tweet_count": 391
+  },
+  {
+   "start": "2026-10-17T00:00:00.000Z",
+   "end": "2026-10-18T00:00:00.000Z",
+   "tweet_count": 112
+  },
+  {
+   "start": "2026-10-18T00:00:00.000Z",
+   "end": "2026-10-19T00:00:00.000Z",
+   "tweet_count": 259
+  },
+  {
+   "start": "2026-10-19T00:00:00.000Z",
+   "end": "2026-10-20T00:00:00.000Z",
+   "tweet_count": 766
+  },
+  {
+   "start": "2026-10-20T00:00:00.000Z",
+   "end": "2026-10-21T00:00:00.000Z",
+   "tweet_count": 903
+  },
+  {
+   "start": "2026-10-21T00:00:00.000Z",
+   "end": "2026-10-21T15:01:27.000Z",
+   "tweet_count": 663
+  }
+ ]
+}
