@@ -135,3 +135,7 @@ Feeder CLI: `scripts/research_feed.py list-jobs|show|submit|unavailable|finalize
 Optional `SORSA_API_KEY` adds Sorsa Score, crypto follower breakdown and top-20 followers to research reports, plus a
 Smart Account Signal from tracked discovery accounts (`seed_accounts.json`). Separate signals only — tiers/weights
 unchanged. Quota-safe (24h cache, ≤3 calls/project, soft-stop at 10 remaining). See docs/SORSA.md.
+
+### Hunter seeds (r2.3)
+`python scripts/seed_accounts.py enrich` → `python scripts/seed_accounts.py follows` (needs `X_BEARER_TOKEN`, optional
+`SEED_FOLLOW_CHECK=true`) and `python scripts/prune_accounts.py` to drop junk non-seed accounts. Details: docs/RESEARCH.md.

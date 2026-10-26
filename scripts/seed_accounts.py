@@ -4,6 +4,8 @@
   python scripts/seed_accounts.py import seed_accounts.json      # or a .csv with a `handle` column
   python scripts/seed_accounts.py mine [--min-projects 2]        # compute discovery stats from stored X snapshots
   python scripts/seed_accounts.py list [--all]                   # tracked accounts with reliability
+  python scripts/seed_accounts.py enrich                         # X users/by: followers, user id (needs X_BEARER_TOKEN)
+  python scripts/seed_accounts.py follows [--force]              # seed -> active project follow check (X, cached 24h)
 
 Importing a handle does NOT label it smart; reliability is computed from recorded outcomes only."""
 import argparse, json, os, sys, pathlib
@@ -20,10 +22,20 @@ sub = ap.add_subparsers(dest="cmd", required=True)
 i = sub.add_parser("import"); i.add_argument("file")
 m = sub.add_parser("mine"); m.add_argument("--min-projects", type=int, default=2)
 l = sub.add_parser("list"); l.add_argument("--all", action="store_true")
+sub.add_parser("enrich")
+fo = sub.add_parser("follows"); fo.add_argument("--force", action="store_true"); fo.add_argument("--max-seeds", type=int, default=15)
 a = ap.parse_args()
 db = Database(os.environ["DATABASE_URL"])
 if a.cmd == "import":
     print(json.dumps(accounts.import_seeds(db, accounts.load_seed_file(a.file)), indent=2))
+elif a.cmd in ("enrich", "follows"):
+    import asyncio
+    from hypebot.config import load_settings
+    from hypebot.collectors.x_api import XClient
+    from hypebot.research import seed_position as sp
+    xc = XClient(load_settings().x_bearer_token)
+    coro = sp.enrich_seed_profiles(db, xc) if a.cmd == "enrich" else sp.check_seed_follows(db, xc, max_seeds=a.max_seeds, force=a.force)
+    print(json.dumps(asyncio.run(coro), indent=2))
 elif a.cmd == "mine":
     print(json.dumps(accounts.mine_history(db, a.min_projects), indent=2))
 else:

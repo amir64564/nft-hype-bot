@@ -64,7 +64,13 @@ def signals_text(r) -> str:
              f"Smart accounts **{ss.get('label', 'unavailable')}**" + (f" ({ss['score']:.0f}, {ss.get('independent_credible_accounts', 0)} independent)" if ss.get("score") is not None else "")
              + f" · Sorsa **{cr.get('label', 'unavailable')}**" + (f" (score {cr['score']:.0f}; {cr.get('influencers')} infl / {cr.get('projects')} proj / {cr.get('vcs')} VC)" if cr.get("score") is not None else "")
              + f" · Quality **{'~%.0f' % q if q is not None else 'n/a'}** · Confidence **{rc.get('label')}**"]
-    for m in (sg.get("matched_accounts") or [])[:4]:
+    ms = sg.get("matched_accounts") or []
+    if ss.get("seed_matches") or ss.get("keeper_matches"):
+        fh = ss.get("seed_follow_handles") or []
+        lines.append(f"🎯 Hunter seeds: **{ss.get('seed_matches', 0)}** matched · **{ss.get('seed_matches_followed', 0)}** follow"
+                     + (" (" + ", ".join("@" + h for h in fh[:8]) + ")" if fh else "")
+                     + f" · {ss.get('seed_matches_mentioned', 0)} mentioned · {ss.get('keeper_matches', 0)} cook-keepers")
+    for m in ms[:10 if (ss.get("seed_matches") or ss.get("keeper_matches")) else 4]:
         src = "+".join(m["source_families"])
         fv = f", follow seen {str(m['follow_verified_at'])[:10]}" if m.get("follow_verified_at") else ", follow date unverified" if m["relationship"] == "followed" else ""
         lines.append(f"• @{m['handle']} — {m['class'].replace('_', ' ')} [{src}{fv}]: {m['why'][:90]}")

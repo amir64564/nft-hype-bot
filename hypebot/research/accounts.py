@@ -217,6 +217,8 @@ def mine_history(db, min_projects: int = 2, create_new: bool = True) -> dict:
                                              source="independent_research", first_seen_at=_dt(v["first_mention_at"]),
                                              evidence={"url": v["mention_url"], "rank_in_sample": v["rank_in_sample"],
                                                        "authors_in_sample": v["authors_in_sample"]}))
+    from .seed_position import mark_keepers
+    stats["keepers"] = mark_keepers(db)
     return stats
 
 
@@ -292,7 +294,9 @@ def smart_signal(*, pack: dict | None, tracked: dict, independent: list | None =
         add(u["username"], "sorsa_new_followers_7d", "sorsa", u.get("follower_date") or "within last 7d (Sorsa)",
             sorsa_score=u.get("score"), followers=u.get("followers_count"))
     for x in independent:
-        add(x["handle"], f"independent_{x.get('relationship', 'mentioned')}", "independent", url=x.get("url"))
+        add(x["handle"], x.get("source") or f"independent_{x.get('relationship', 'mentioned')}",
+            x.get("family") or "independent", follow_date=x.get("follow_date"), url=x.get("url"))
+    unavailable += list(independent_flags.get("unavailable") or [])
     matched, notable, conflicts = [], [], []
     for h, o in obs.items():
         acc = tracked.get(h)
@@ -311,12 +315,17 @@ def smart_signal(*, pack: dict | None, tracked: dict, independent: list | None =
                f"{hist.get('hits_tier_1_2', 0)} hit(s) T1–T2, {hist.get('early_in_sample', 0)} early-in-sample mention(s)")
         if "seed_list" in (acc.get("sources") or []) and not hist.get("known_outcomes"):
             why = "seed account (Rudra's list) — no recorded discovery history yet"
-        rel = "followed" if "sorsa" in o["families"] else "mentioned"
+        if "seed_follow" in o["families"]:
+            why = ("hunter seed follows this project (X following check) — pre-cook position; " + why)[:200]
+        if (acc.get("flags") or {}).get("cook_position_keeper"):
+            why = ("cook-position keeper (early on multiple / later-cooked projects); " + why)[:200]
+        rel = "followed" if o["families"] & {"sorsa", "seed_follow"} else "mentioned"
         matched.append({"handle": h, "class": cls, "why": why, "relationship": rel,
                         "source": sorted(o["sources"]), "source_families": sorted(o["families"]),
                         "follow_verified_at": o["follow_verified_at"], "reliability": acc["reliability_label"],
                         "sorsa_score": o["sorsa_score"] if o["sorsa_score"] is not None else acc.get("sorsa_score"),
-                        "followers_count": acc.get("followers_count"), "urls": o["urls"][:2]})
+                        "followers_count": acc.get("followers_count"), "urls": o["urls"][:2],
+                        "is_keeper": bool((acc.get("flags") or {}).get("cook_position_keeper"))})
         if cls == "low_quality_suspect" and (o.get("sorsa_score") or 0) >= 100:
             conflicts.append({"type": "account_quality", "handle": h,
                               "detail": f"Sorsa score {o['sorsa_score']} looks credible, but our history flags "
@@ -372,11 +381,13 @@ def smart_signal(*, pack: dict | None, tracked: dict, independent: list | None =
     seed_m = [m for m in matched if "seed_list" in ((tracked.get(m["handle"]) or {}).get("sources") or [])]
     for m in matched:
         m["is_seed"] = m in seed_m
-    matched.sort(key=lambda m: (not m["is_seed"], m["handle"]))
+    matched.sort(key=lambda m: (not m["is_seed"], not m["is_keeper"], m["relationship"] != "followed", m["handle"]))
     return {"smart_account_signal": {"label": label, "score": score, "independent_credible_accounts": len(counted),
                                      "matched": len(matched), "seed_matches": len(seed_m),
                                      "seed_matches_followed": sum(1 for m in seed_m if m["relationship"] == "followed"),
                                      "seed_matches_mentioned": sum(1 for m in seed_m if "independent" in m["source_families"]),
+                                     "seed_follow_handles": [m["handle"] for m in seed_m if m["relationship"] == "followed"][:20],
+                                     "keeper_matches": sum(1 for m in matched if m["is_keeper"]),
                                      "seeds_tracked": sum(1 for a in tracked.values() if "seed_list" in (a.get("sources") or [])),
                                      "score_basis": "only medium/high-reliability accounts with known outcomes count; "
                                                     "provisional seed matches are listed but add 0"},
@@ -438,8 +449,14 @@ def independent_observations(s, project_id: int, evs: list) -> list:
     out = link_tracked_mention_authors(s, project_id)
     rows = s.execute(select(AccountProjectLink, TrackedAccount).join(TrackedAccount, TrackedAccount.id == AccountProjectLink.account_id)
                      .where(AccountProjectLink.project_id == project_id,
-                            AccountProjectLink.source.in_(("independent_research", "history_mining")))).all()
+                            AccountProjectLink.source.in_(("independent_research", "history_mining", "x_following_check")))).all()
     for l, a in rows:
+        if l.source == "x_following_check":
+            if (l.evidence or {}).get("follows"):
+                out.append({"handle": a.x_handle, "relationship": "followed", "family": "seed_follow",
+                            "source": "x_following_check", "follow_date": (l.evidence or {}).get("checked_at"),
+                            "url": f"https://x.com/{a.x_handle}/following"})
+            continue
         out.append({"handle": a.x_handle, "relationship": l.relationship, "url": (l.evidence or {}).get("url")})
     for e in evs:
         if e.get("signal") == "respected_account_engaged" and e.get("account") and e.get("verified"):

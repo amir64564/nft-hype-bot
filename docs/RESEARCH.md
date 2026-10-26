@@ -152,3 +152,17 @@ with known outcomes (`signals.affects_tier = false`).
   coverage/confidence. No Sorsa data → NOT_APPLICABLE (no penalty).
 * Tables (additive): `tracked_accounts`, `account_project_links`, `sorsa_project_snapshots` (append-only),
   `sorsa_cache`, `sorsa_api_log` (append-only). See docs/SORSA.md.
+
+## r2.3 — Hunter seed position, cook keepers, auto-prune
+See `hypebot/research/seed_position.py` docstring for exact thresholds.
+- **Prune** (`scripts/prune_accounts.py [--dry-run]`): non-seed accounts with reliability `low` or spam/coordinated flags,
+  followers < 500 (or unknown), 0 known outcomes, < 2 early-in-sample projects and not a keeper are deleted with their links.
+  Seeds are never deleted; tiny (< 100 followers) or spammy seeds get `flags.worthless_candidate` + a note.
+- **Cook-position keeper** (`flags.cook_position_keeper`): early on ≥ 2 projects, or early on a later FINALIZED T1–T2
+  project, or present on ≥ 2 un-finalized projects with rising hype. Never pruned; listed first. No score change.
+- **Seed follow check**: `scripts/seed_accounts.py enrich` (X `users/by`) then `scripts/seed_accounts.py follows`
+  (X `users/:id/following`, 1 page per seed, cached 24 h, active research projects only). Follows are stored as
+  `account_project_links(relationship=followed, source=x_following_check)` and shown as `seed_follow` matches with
+  `is_seed=true` even while provisional (numeric score stays 0 until reliability medium/high). On 403 / missing token
+  the reason appears in `unavailable_reasons` as `seed_follow_check: ...`; Sorsa + mention-sample fallbacks still apply.
+- Embed shows a 🎯 Hunter seeds line (followed handles) and up to 10 matched accounts when seeds/keepers are present.

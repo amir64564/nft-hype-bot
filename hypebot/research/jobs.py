@@ -371,7 +371,14 @@ def social_signal_for(s, proj, evs, hype) -> dict:
         pack=pack, tracked=acc_mod.tracked_map(s), independent=acc_mod.independent_observations(s, proj.id, evs),
         hype_score=(hype or {}).get("hype_score"),
         independent_flags={"promo_or_low_effort_ratio": m.get("promo_or_low_effort_ratio") if (m.get("mentions_sample") or 0) >= 25 else None,
-                           "respected_engagements": sum(1 for e in evs if e.get("signal") == "respected_account_engaged" and e.get("verified"))})
+                           "respected_engagements": sum(1 for e in evs if e.get("signal") == "respected_account_engaged" and e.get("verified")),
+                           "unavailable": seed_follow_unavailable(s)})
+
+
+def seed_follow_unavailable(s) -> list:
+    from .seed_position import last_follow_check_status
+    st = last_follow_check_status(s)
+    return [f"seed_follow_check: {st}"] if st else []
 
 
 def collect_sorsa(db: Database, job_id: int, http=None) -> dict | None:
